@@ -1,15 +1,15 @@
 from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
-from first_pipeline.config.ConfigStore import *
-from first_pipeline.udfs.UDFs import *
+from pricingsummary.config.ConfigStore import *
+from pricingsummary.udfs.UDFs import *
 from prophecy.utils import *
-from first_pipeline.graph import *
+from pricingsummary.graph import *
 
 def pipeline(spark: SparkSession) -> None:
-    df_first_dataset = first_dataset(spark)
-    df_by_production_budget_desc_nulls_first = by_production_budget_desc_nulls_first(spark, df_first_dataset)
-    first_dataset_1(spark, df_by_production_budget_desc_nulls_first)
+    df_dataset_suraj = dataset_suraj(spark)
+    df_by_production_budget_desc_nulls_first = by_production_budget_desc_nulls_first(spark, df_dataset_suraj)
+    dataset_suraj_1(spark, df_by_production_budget_desc_nulls_first)
 
 def main():
     spark = SparkSession.builder\
@@ -20,15 +20,15 @@ def main():
                 .getOrCreate()\
                 .newSession()
     Utils.initializeFromArgs(spark, parse_args())
-    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/first_pipeline")
+    spark.conf.set("prophecy.metadata.pipeline.uri", "pipelines/PricingSummary")
     registerUDFs(spark)
 
     try:
         
-        MetricsCollector.start(spark = spark, pipelineId = "pipelines/first_pipeline", config = Config)
+        MetricsCollector.start(spark = spark, pipelineId = "pipelines/PricingSummary", config = Config)
     except :
         
-        MetricsCollector.start(spark = spark, pipelineId = "pipelines/first_pipeline")
+        MetricsCollector.start(spark = spark, pipelineId = "pipelines/PricingSummary")
 
     pipeline(spark)
     MetricsCollector.end(spark)

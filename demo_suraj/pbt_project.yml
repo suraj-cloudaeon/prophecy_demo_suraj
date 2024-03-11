@@ -11,19 +11,19 @@ buildSystemDetails:
   author: null
   createdAt: '2024-03-11 10:35:13'
 pipelines:
-  pipelines/first_pipeline:
-    name: first_pipeline
-    description: ''
+  pipelines/PricingSummary:
+    name: PricingSummary
+    description: Report for prices, descounts and shopping status
     author: suraj.thakur@cloudaeon.net
     mode: batch
     artefactID: ''
     language: python
-    createdAt: '2024-03-11 10:35:13'
+    createdAt: '2024-03-11 12:56:12'
     datasets:
       inputs:
-      - datasets/first_dataset
+      - datasets/dataset_suraj
       outputs:
-      - datasets/first_dataset
+      - datasets/target
     subgraphs: []
     dependencies: {}
 datasets:
@@ -40,6 +40,32 @@ datasets:
         description: ''
         author: suraj.thakur@cloudaeon.net
         createdAt: '2024-03-11 10:43:35'
+  datasets/dataset_suraj:
+    name: dataset_suraj
+    description: ''
+    author: suraj.thakur@cloudaeon.net
+    createdAt: '2024-03-11 13:08:57'
+    mode: batch
+    physicalDatasets:
+      suraj_dev:
+        fabricId: 10146
+        datasetType: File
+        description: ''
+        author: suraj.thakur@cloudaeon.net
+        createdAt: '2024-03-11 13:08:57'
+  datasets/target:
+    name: target
+    description: ''
+    author: suraj.thakur@cloudaeon.net
+    createdAt: '2024-03-11 13:22:28'
+    mode: batch
+    physicalDatasets:
+      suraj_dev:
+        fabricId: 10146
+        datasetType: Database
+        description: ''
+        author: suraj.thakur@cloudaeon.net
+        createdAt: '2024-03-11 13:22:28'
 templates: {}
 jobs: {}
 gemContainer:
