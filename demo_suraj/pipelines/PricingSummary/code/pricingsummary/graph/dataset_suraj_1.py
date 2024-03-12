@@ -13,4 +13,14 @@ def dataset_suraj_1(spark: SparkSession, in0: DataFrame):
         .mode("overwrite")\
         .option("separator", ",")\
         .option("header", True)\
-        .csv("dbfs:/FileStore/tables/suraj/movie_statistics_sorted_by_duration.csv")
+        .csv("dbfs:/FileStore/tables/sss/file.csv_temp")
+    from prophecy.utils.gems_utils import concatenateFiles
+    concatenateFiles(
+        spark,
+        ".csv",
+        "overwrite",
+        "dbfs:/FileStore/tables/sss/file.csv_temp",
+        "dbfs:/FileStore/tables/sss/file.csv",
+        True,
+        True
+    )
