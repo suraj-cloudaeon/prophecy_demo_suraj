@@ -9,7 +9,8 @@ from pricingsummary.graph import *
 def pipeline(spark: SparkSession) -> None:
     df_dataset_suraj = dataset_suraj(spark)
     df_by_production_budget_desc_nulls_first = by_production_budget_desc_nulls_first(spark, df_dataset_suraj)
-    dataset_suraj_1(spark, df_by_production_budget_desc_nulls_first)
+    df_limit_55 = limit_55(spark, df_by_production_budget_desc_nulls_first)
+    dataset_suraj_1(spark, df_limit_55)
 
 def main():
     spark = SparkSession.builder\
