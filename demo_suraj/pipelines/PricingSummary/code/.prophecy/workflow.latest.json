@@ -9,7 +9,7 @@
     "id" : "1",
     "uri" : "pipelines/PricingSummary",
     "language" : "python",
-    "fabricId" : "10146",
+    "fabricId" : "10090",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -267,7 +267,7 @@
             "format" : "sql",
             "expression" : "runtime_minutes"
           },
-          "sortType" : "asc"
+          "sortType" : "desc_nulls_first"
         } ]
       },
       "componentInfo" : {
