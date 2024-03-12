@@ -432,6 +432,31 @@
       "properties" : {
         "datasetId" : "datasets/target"
       }
+    },
+    "xgplCwg-N6H12_Nmgenxy$$xVyFkNXu_T6FTzxbWriTj" : {
+      "id" : "xgplCwg-N6H12_Nmgenxy$$xVyFkNXu_T6FTzxbWriTj",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "Source_1",
+        "x" : 0,
+        "y" : -180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "21-an_zg6L9rdbiNJMzg2$$aEvZYdxhHx51HhcJEcfgR",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
     }
   },
   "ports" : {
@@ -440,5 +465,23 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.xgplCwg-N6H12_Nmgenxy$$xVyFkNXu_T6FTzxbWriTj.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
+  } ]
 }
