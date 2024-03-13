@@ -9,7 +9,7 @@
     "id" : "1",
     "uri" : "pipelines/PricingSummary",
     "language" : "python",
-    "fabricId" : "7908",
+    "fabricId" : "10146",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
