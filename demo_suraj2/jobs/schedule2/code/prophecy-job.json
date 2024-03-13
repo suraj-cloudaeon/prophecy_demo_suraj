@@ -4,7 +4,7 @@
     "fabricId" : "10150",
     "jobId" : "jobs/schedule2",
     "name" : "schedule2",
-    "schedule" : "0 0/2 * * * ? *",
+    "schedule" : "None",
     "scheduleTimeZone" : "UTC",
     "jobClusterMode" : {
       "clusterMode" : "Single"
@@ -132,7 +132,8 @@
       "scalalibsResolutionMode" : {
         "PublicCentral" : { }
       }
-    } ]
+    } ],
+    "accessControlList" : [ ]
   },
   "processes" : {
     "J1d_XjhWtJ1jgYME7i4Ds" : {

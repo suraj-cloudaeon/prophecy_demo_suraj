@@ -73,11 +73,7 @@
       "max_retries" : 0
     } ],
     "max_concurrent_runs" : 1,
-    "schedule" : {
-      "quartz_cron_expression" : "0 0/2 * * * ? *",
-      "timezone_id" : "UTC",
-      "pause_status" : "UNPAUSED"
-    }
+    "access_control_list" : [ ]
   },
   "cluster_mode" : {
     "clusterMode" : "Single"

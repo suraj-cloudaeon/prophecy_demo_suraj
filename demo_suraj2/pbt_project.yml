@@ -63,7 +63,7 @@ jobs:
       Databricks: {}
     cloudProvider: null
     jobSize: small
-    scheduleCron: 0 0/2 * * * ? *
+    scheduleCron: None
     timeout: null
     alerting:
       emails: suraj.thakur@cloudaeon.net
