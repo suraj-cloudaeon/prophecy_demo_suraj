@@ -443,8 +443,8 @@
       "id" : "pgww91veKsK2nD9ekJog6$$5sGUqNf0ryL7TCzdaBwTT",
       "component" : "Limit",
       "metadata" : {
-        "label" : "limit_100",
-        "slug" : "limit_100",
+        "label" : "limit_300",
+        "slug" : "limit_300",
         "x" : -360,
         "y" : -60,
         "phase" : 0,
@@ -597,7 +597,7 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "limit" : "200"
+        "limit" : "300"
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Limit",
