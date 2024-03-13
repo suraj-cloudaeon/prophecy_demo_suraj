@@ -7,4 +7,4 @@ from pricingsummary.config.ConfigStore import *
 from pricingsummary.udfs.UDFs import *
 
 def limit_300(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.limit(300)
+    return in0.limit(400)
