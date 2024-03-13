@@ -55,29 +55,6 @@ datasets:
         createdAt: '2024-03-13 13:36:25'
 templates: {}
 jobs:
-  jobs/scedule1:
-    name: scedule1
-    description: ''
-    fabricUID: 10146
-    scheduler:
-      Databricks: {}
-    cloudProvider: null
-    jobSize: small
-    scheduleCron: 0 0/5 * * * ? *
-    timeout: null
-    alerting:
-      emails: suraj.thakur@cloudaeon.net
-      onStart: true
-      onSuccess: true
-      onFailure: false
-    pipelines: []
-    jobClusterMode:
-      clusterMode:
-        Single: {}
-      clusterId: null
-    enabled: false
-    createdAt: '2024-03-13 13:38:39'
-    author: suraj.thakur@cloudaeon.net
   jobs/schedule2:
     name: schedule2
     description: ''
