@@ -66,13 +66,15 @@
           "slug" : ""
         } ]
       },
-      "settings" : { },
+      "settings" : {
+        "email" : "suraj.thakur@cloudaeon.net"
+      },
       "properties" : {
         "emailCC" : null,
         "subject" : "test airflow",
         "emailBCC" : null,
         "emailTo" : "suraj.thakur@cloudaeon.net",
-        "emailConnectionId" : "qGdMp7qNHUkBod791wTYt",
+        "emailConnectionId" : "Yrb7Qr01xEk9Th0Oy8T7l",
         "htmlContent" : "test airflow",
         "taskId" : null
       },

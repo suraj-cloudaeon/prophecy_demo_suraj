@@ -13,5 +13,6 @@ def Email_0():
         bcc = None,
         mime_subtype = "mixed",
         mime_charset = "utf-8",
-        conn_id = "qGdMp7qNHUkBod791wTYt",
+        conn_id = "Yrb7Qr01xEk9Th0Oy8T7l",
+        email = "suraj.thakur@cloudaeon.net"
     )
