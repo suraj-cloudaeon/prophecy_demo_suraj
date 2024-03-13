@@ -43,4 +43,5 @@ def Pipeline_1(ti=None, params=None, **context):
                          }]
         },
         databricks_conn_id = "yl7NksIBQJws_Mz0oTlsW",
+        email = ""
     )

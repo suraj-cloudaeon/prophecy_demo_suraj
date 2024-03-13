@@ -7,11 +7,11 @@ def Email_0():
     return EmailOperator(
         task_id = "Email_0",
         to = "suraj.thakur@cloudaeon.net",
-        subject = "Test Airflow Email Connection",
-        html_content = "Test Airflow Email Connection",
-        cc = "",
+        subject = "test airflow",
+        html_content = "test airflow",
+        cc = None,
         bcc = None,
         mime_subtype = "mixed",
         mime_charset = "utf-8",
-        conn_id = "3AghGlILLzLfiCxmwazWD",
+        conn_id = "qGdMp7qNHUkBod791wTYt",
     )

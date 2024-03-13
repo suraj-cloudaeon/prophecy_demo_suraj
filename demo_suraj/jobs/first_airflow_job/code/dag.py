@@ -14,11 +14,11 @@ with DAG(
     dag_id = "x5fiQz11qp_IeD2PCtJ_0w_", 
     schedule_interval = None, 
     default_args = {"owner" : "Prophecy", "ignore_first_depends_on_past" : True, "do_xcom_push" : True, "pool" : "UH6w2J13"}, 
-    start_date = pendulum.today('Asia/Calcutta'), 
-    end_date = pendulum.datetime(2024, 3, 14, tz = "Asia/Calcutta"), 
+    start_date = pendulum.datetime(2024, 3, 13, tz = "Asia/Calcutta"), 
+    end_date = pendulum.datetime(2024, 4, 2, tz = "Asia/Calcutta"), 
     catchup = True, 
     tags = []
 ) as dag:
-    Email_0_op = Email_0()
     Pipeline_1_op = Pipeline_1()
-    Email_0_op >> Pipeline_1_op
+    Email_0_op = Email_0()
+    Pipeline_1_op >> Email_0_op
