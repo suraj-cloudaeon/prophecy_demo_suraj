@@ -68,28 +68,29 @@ datasets:
         createdAt: '2024-03-11 13:22:28'
 templates: {}
 jobs:
-  jobs/first_airflow_job:
-    name: first_airflow_job
+  jobs/first_local_job:
+    name: first_local_job
     description: ''
-    fabricUID: 10235
+    fabricUID: 10146
     scheduler:
-      Prophecy: {}
+      Databricks: {}
     cloudProvider: null
-    jobSize: null
-    scheduleCron: None
+    jobSize: small
+    scheduleCron: 0 0/2 * * * ? *
     timeout: null
     alerting:
-      emails: ''
+      emails: suraj.thakur@cloudaeon.net
       onStart: false
-      onSuccess: false
+      onSuccess: true
       onFailure: false
-    pipelines: []
+    pipelines:
+    - pipelines/PricingSummary
     jobClusterMode:
       clusterMode:
-        Multi: {}
+        Single: {}
       clusterId: null
     enabled: true
-    createdAt: '2024-03-13 10:15:03'
+    createdAt: '2024-03-13 13:22:51'
     author: suraj.thakur@cloudaeon.net
 gemContainer:
   languageVersion: '3.10'
