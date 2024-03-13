@@ -13,7 +13,15 @@ PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLA
 with DAG(
     dag_id = "x5fiQz11qp_IeD2PCtJ_0w_", 
     schedule_interval = None, 
-    default_args = {"owner" : "Prophecy", "ignore_first_depends_on_past" : True, "do_xcom_push" : True, "pool" : "UH6w2J13"}, 
+    default_args = {
+      "owner": "Prophecy", 
+      "email": "suraj.thakur@cloudaeon.net", 
+      "email_on_failure": True, 
+      "email_on_retry": True, 
+      "ignore_first_depends_on_past": True, 
+      "do_xcom_push": True, 
+      "pool": "UH6w2J13"
+    }, 
     start_date = pendulum.datetime(2024, 3, 13, tz = "Asia/Calcutta"), 
     end_date = pendulum.datetime(2024, 4, 2, tz = "Asia/Calcutta"), 
     catchup = True, 

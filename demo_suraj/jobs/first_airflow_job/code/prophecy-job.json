@@ -15,6 +15,9 @@
     },
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
+      "email" : "suraj.thakur@cloudaeon.net",
+      "email_on_failure" : true,
+      "email_on_retry" : true,
       "ignore_first_depends_on_past" : true,
       "pool" : "UH6w2J13",
       "do_xcom_push" : true
@@ -108,7 +111,10 @@
             "demo_suraj" : [ "default" ]
           },
           "overrides" : { },
-          "selectedInstance" : "default"
+          "selectedInstance" : {
+            "type" : "literal",
+            "value" : "default"
+          }
         },
         "taskId" : null,
         "pipelineId" : {
