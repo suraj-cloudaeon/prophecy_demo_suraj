@@ -1,0 +1,86 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "10235",
+    "jobId" : "jobs/schedule3_airflow",
+    "name" : "schedule3_airflow",
+    "dagName" : "SDS8zhCZ6Mv5jrRHvZBLNw_",
+    "schedule" : "0 0/2 * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "UH6w2J13",
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "10235",
+      "name" : "airflow_fabric",
+      "trialStartDate" : 1710230667021
+    } ],
+    "endDate" : "2024-04-02",
+    "catchup" : true,
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false
+    }
+  },
+  "processes" : {
+    "r3v7Co2hb-IEtFWrA_A-N" : {
+      "id" : "r3v7Co2hb-IEtFWrA_A-N",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "pipeline1",
+        "slug" : "pipeline1",
+        "x" : -240,
+        "y" : 60
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "in",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "out",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "pipelineId" : {
+          "type" : "literal",
+          "value" : "pipelines/pipeline1"
+        },
+        "fabricId" : "10235",
+        "jobSize" : "",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "project_demo_suraj2" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ ]
+}
