@@ -70,6 +70,29 @@ jobs:
       onStart: true
       onSuccess: true
       onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2024-03-13 13:38:39'
+    author: suraj.thakur@cloudaeon.net
+  jobs/schedule2:
+    name: schedule2
+    description: ''
+    fabricUID: 10150
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0/2 * * * ? *
+    timeout: null
+    alerting:
+      emails: suraj.thakur@cloudaeon.net
+      onStart: true
+      onSuccess: false
+      onFailure: false
     pipelines:
     - pipelines/pipeline1
     jobClusterMode:
@@ -77,7 +100,7 @@ jobs:
         Single: {}
       clusterId: null
     enabled: true
-    createdAt: '2024-03-13 13:38:39'
+    createdAt: '2024-03-13 14:00:36'
     author: suraj.thakur@cloudaeon.net
 gemContainer:
   languageVersion: '3.10'
