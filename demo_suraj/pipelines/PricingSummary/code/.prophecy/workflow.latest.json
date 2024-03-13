@@ -9,7 +9,7 @@
     "id" : "1",
     "uri" : "pipelines/PricingSummary",
     "language" : "python",
-    "fabricId" : "10089",
+    "fabricId" : "10090",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -597,7 +597,7 @@
         "autoUpdateOnRun" : false
       },
       "properties" : {
-        "limit" : "100"
+        "limit" : "200"
       },
       "componentInfo" : {
         "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Limit",
