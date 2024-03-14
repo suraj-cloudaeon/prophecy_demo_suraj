@@ -8,8 +8,9 @@ from pipeline1.graph import *
 
 def pipeline(spark: SparkSession) -> None:
     df_dataset1 = dataset1(spark)
-    df_by_movie_rating_desc_nulls_first = by_movie_rating_desc_nulls_first(spark, df_dataset1)
-    dataset2(spark, df_by_movie_rating_desc_nulls_first)
+    df_ordering_the_dataset = ordering_the_dataset(spark, df_dataset1)
+    df_limit_100 = limit_100(spark, df_ordering_the_dataset)
+    dataset2(spark, df_limit_100)
 
 def main():
     spark = SparkSession.builder\
