@@ -68,19 +68,6 @@
         "PublicCentral" : { }
       }
     }, {
-      "id" : "7908",
-      "name" : "workshop-fabric",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
-      },
-      "pylibsResolutionMode" : {
-        "PublicCentral" : { }
-      },
-      "scalalibsResolutionMode" : {
-        "PublicCentral" : { }
-      }
-    }, {
       "id" : "6286",
       "name" : "dev",
       "clusterSizes" : {
