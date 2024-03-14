@@ -129,8 +129,8 @@
       "metadata" : {
         "label" : "pipeline1",
         "slug" : "pipeline1",
-        "x" : 100,
-        "y" : 100
+        "x" : -320,
+        "y" : 40
       },
       "ports" : {
         "inputs" : [ {
