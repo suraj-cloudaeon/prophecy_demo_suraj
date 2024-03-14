@@ -98,9 +98,9 @@ jobs:
     - pipelines/pipeline1
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2024-03-13 14:11:20'
     author: suraj.thakur@cloudaeon.net
 gemContainer:
