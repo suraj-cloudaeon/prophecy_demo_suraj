@@ -107,8 +107,8 @@
       "id" : "TvFnucfcvWjc7wBcx9-wV$$k5mJSewEvWDd2yDssxLU2",
       "component" : "OrderBy",
       "metadata" : {
-        "label" : "by_movie_rating_desc_nulls_first",
-        "slug" : "by_movie_rating_desc_nulls_first",
+        "label" : "ordering_the_dataset",
+        "slug" : "ordering_the_dataset",
         "x" : -400,
         "y" : -180,
         "phase" : 0,
