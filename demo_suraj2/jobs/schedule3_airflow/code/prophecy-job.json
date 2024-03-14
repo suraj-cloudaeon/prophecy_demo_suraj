@@ -15,6 +15,9 @@
     },
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
+      "email" : "suraj.thakur@cloudaeon.net",
+      "email_on_failure" : true,
+      "email_on_retry" : true,
       "ignore_first_depends_on_past" : true,
       "pool" : "UH6w2J13",
       "do_xcom_push" : true
@@ -26,6 +29,8 @@
     } ],
     "endDate" : "2024-04-02",
     "catchup" : true,
+    "startDate" : "2024-03-13",
+    "tags" : [ ],
     "scheduleTimeZone" : "UTC",
     "dagParams" : {
       "instances" : {
@@ -61,14 +66,12 @@
           "slug" : ""
         } ]
       },
-      "settings" : { },
+      "settings" : {
+        "email" : "suraj.thakur@cloudaeon.net"
+      },
       "properties" : {
-        "pipelineId" : {
-          "type" : "literal",
-          "value" : "pipelines/pipeline1"
-        },
         "fabricId" : "10235",
-        "jobSize" : "",
+        "clusterSize" : "10146/small",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
@@ -76,6 +79,11 @@
           },
           "overrides" : { },
           "selectedInstance" : "default"
+        },
+        "jobSize" : "",
+        "pipelineId" : {
+          "type" : "literal",
+          "value" : "pipelines/pipeline1"
         }
       },
       "connections" : [ ],

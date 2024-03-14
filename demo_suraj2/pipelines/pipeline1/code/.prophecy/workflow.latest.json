@@ -267,7 +267,7 @@
             "format" : "sql",
             "expression" : "movie_averageRating"
           },
-          "sortType" : "desc_nulls_first"
+          "sortType" : "asc"
         } ]
       },
       "componentInfo" : {
