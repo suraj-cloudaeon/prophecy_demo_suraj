@@ -9,12 +9,12 @@
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
-    "enabled" : true,
+    "enabled" : false,
     "defaultClusterSize" : "small",
     "alerting" : {
       "emails" : "suraj.thakur@cloudaeon.net",
       "onStart" : true,
-      "onSuccess" : false,
+      "onSuccess" : true,
       "onFailure" : false
     },
     "maxConcurrentRuns" : 1,
@@ -129,8 +129,8 @@
       "metadata" : {
         "label" : "pipeline1",
         "slug" : "pipeline1",
-        "x" : -320,
-        "y" : 40
+        "x" : 100,
+        "y" : 100
       },
       "ports" : {
         "inputs" : [ {
@@ -161,6 +161,26 @@
           "overrides" : { },
           "selectedInstance" : "default"
         }
+      },
+      "parent" : "1c_-b-ZOKcWh73CkRBGEb"
+    },
+    "1c_-b-ZOKcWh73CkRBGEb" : {
+      "id" : "1c_-b-ZOKcWh73CkRBGEb",
+      "component" : "Cluster",
+      "metadata" : {
+        "label" : "Cluster_1",
+        "slug" : "Cluster_1",
+        "x" : -420,
+        "y" : -60,
+        "width" : 280,
+        "height" : 280
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ]
+      },
+      "properties" : {
+        "clusterSize" : "small"
       }
     }
   },

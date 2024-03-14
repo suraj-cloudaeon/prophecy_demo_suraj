@@ -68,7 +68,7 @@ jobs:
     alerting:
       emails: suraj.thakur@cloudaeon.net
       onStart: true
-      onSuccess: false
+      onSuccess: true
       onFailure: false
     pipelines:
     - pipelines/pipeline1
@@ -76,7 +76,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: true
+    enabled: false
     createdAt: '2024-03-13 14:00:36'
     author: suraj.thakur@cloudaeon.net
   jobs/schedule3_airflow:
