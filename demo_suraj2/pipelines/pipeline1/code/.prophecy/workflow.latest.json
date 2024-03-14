@@ -69,9 +69,15 @@
     "target" : "TvFnucfcvWjc7wBcx9-wV$$k5mJSewEvWDd2yDssxLU2",
     "targetPort" : "SRyYBd_15iW21GhWn8DMW$$NgWmplQKnoSJGFxZ5wSJI"
   }, {
-    "id" : "FDG-gNgs-FvjlWC1WEXgl",
+    "id" : "y7EqTI6ko0tQa6vaxzrCQ$$gr8HuQh8nrmrnranm2c2n",
     "source" : "TvFnucfcvWjc7wBcx9-wV$$k5mJSewEvWDd2yDssxLU2",
     "sourcePort" : "A0y1_g_1QqrV9Pp9nx4un$$esEnyQCeKzsFS4gepGxUr",
+    "target" : "KbrFKXMme1l1_P-qSPQbm$$BogxWb1ICz4W4x9-DGJJc",
+    "targetPort" : "YK1_S2JEdsjjUey_ByZpg$$DJo5_QU1Pm0LkoXdZjti2"
+  }, {
+    "id" : "pciFh0u9dJmnyYaa8F5yF",
+    "source" : "KbrFKXMme1l1_P-qSPQbm$$BogxWb1ICz4W4x9-DGJJc",
+    "sourcePort" : "xYGI14BKa62tG3IMqRj_E$$bL0M0IxLiCxmuhBtAZTlV",
     "target" : "qpnPvdgmFlEenyWGrZmGX$$dFpiu-oMf8NPurSAX-GUJ",
     "targetPort" : "szSrOSHauYg8sxrjZZBd2$$X6irJdiE1W0mexfrrhDmN"
   } ],
@@ -281,7 +287,7 @@
       "metadata" : {
         "label" : "dataset2",
         "slug" : "dataset2",
-        "x" : -260,
+        "x" : -20,
         "y" : -180,
         "phase" : 0,
         "cache" : false,
@@ -431,6 +437,171 @@
       },
       "properties" : {
         "datasetId" : "datasets/dataset2"
+      }
+    },
+    "KbrFKXMme1l1_P-qSPQbm$$BogxWb1ICz4W4x9-DGJJc" : {
+      "id" : "KbrFKXMme1l1_P-qSPQbm$$BogxWb1ICz4W4x9-DGJJc",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "limit_100",
+        "slug" : "limit_100",
+        "x" : -220,
+        "y" : -180,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YK1_S2JEdsjjUey_ByZpg$$DJo5_QU1Pm0LkoXdZjti2",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "movie_title",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "production_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "genres",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "runtime_minutes",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "director_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "director_professions",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "director_birthYear",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "director_deathYear",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "movie_averageRating",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "movie_numerOfVotes",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "approval_Index",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Production budget $",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Domestic gross $",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Worldwide gross $",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "xYGI14BKa62tG3IMqRj_E$$bL0M0IxLiCxmuhBtAZTlV",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "limit" : "100"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Limit",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     }
   },
