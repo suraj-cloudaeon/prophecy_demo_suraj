@@ -68,19 +68,6 @@
         "PublicCentral" : { }
       }
     }, {
-      "id" : "6286",
-      "name" : "dev",
-      "clusterSizes" : {
-        "default" : "Small",
-        "availableClusterSizes" : [ "Small" ]
-      },
-      "pylibsResolutionMode" : {
-        "PublicCentral" : { }
-      },
-      "scalalibsResolutionMode" : {
-        "PublicCentral" : { }
-      }
-    }, {
       "id" : "10072",
       "name" : "Project01",
       "clusterSizes" : {
@@ -162,16 +149,16 @@
           "selectedInstance" : "default"
         }
       },
-      "parent" : "1c_-b-ZOKcWh73CkRBGEb"
+      "parent" : "D-NEgqT2CwVXPhTvx6X5S"
     },
-    "1c_-b-ZOKcWh73CkRBGEb" : {
-      "id" : "1c_-b-ZOKcWh73CkRBGEb",
+    "D-NEgqT2CwVXPhTvx6X5S" : {
+      "id" : "D-NEgqT2CwVXPhTvx6X5S",
       "component" : "Cluster",
       "metadata" : {
         "label" : "Cluster_1",
         "slug" : "Cluster_1",
-        "x" : -420,
-        "y" : -60,
+        "x" : -1040,
+        "y" : -280,
         "width" : 280,
         "height" : 280
       },

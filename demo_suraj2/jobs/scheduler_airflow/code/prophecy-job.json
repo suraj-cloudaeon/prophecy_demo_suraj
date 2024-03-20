@@ -1,12 +1,12 @@
 {
   "metainfo" : {
     "type" : "Prophecy",
-    "fabricId" : "10235",
-    "jobId" : "jobs/schedule3_airflow",
-    "name" : "schedule3_airflow",
-    "dagName" : "SDS8zhCZ6Mv5jrRHvZBLNw_",
-    "schedule" : "0 0/2 * * *",
-    "enabled" : false,
+    "fabricId" : "10459",
+    "jobId" : "jobs/scheduler_airflow",
+    "name" : "scheduler_airflow",
+    "dagName" : "tdWOYaGVAcVFv_PiI2qiaA_",
+    "schedule" : "0/15 * * * *",
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -19,19 +19,18 @@
       "email_on_failure" : true,
       "email_on_retry" : true,
       "ignore_first_depends_on_past" : true,
-      "pool" : "UH6w2J13",
+      "pool" : "hrlFHyu4",
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
-      "id" : "10235",
-      "name" : "airflow_fabric",
-      "trialStartDate" : 1710230667021
+      "id" : "10459",
+      "name" : "fabric_airflow_st",
+      "trialStartDate" : 1710920555127
     } ],
-    "endDate" : "2024-04-02",
+    "endDate" : "2024-04-10",
     "catchup" : true,
-    "startDate" : "2024-03-13",
     "tags" : [ ],
-    "scheduleTimeZone" : "UTC",
+    "scheduleTimeZone" : "Asia/Calcutta",
     "dagParams" : {
       "instances" : {
         "default" : { }
@@ -47,30 +46,29 @@
     }
   },
   "processes" : {
-    "r3v7Co2hb-IEtFWrA_A-N" : {
-      "id" : "r3v7Co2hb-IEtFWrA_A-N",
+    "Xxn_0d0KUt04vtUttXNm6$$2JKLC5N7hNNaWfcBcRsLG" : {
+      "id" : "Xxn_0d0KUt04vtUttXNm6$$2JKLC5N7hNNaWfcBcRsLG",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "pipeline1",
-        "slug" : "pipeline1",
-        "x" : -240,
-        "y" : 60
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : -540,
+        "y" : -180
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "in",
+          "id" : "j1pCGDmw0J5nrLY7CjPTE$$uwdRghKWEw0wxOH6-g_8F",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "out",
+          "id" : "wXQkMlPkYoWaSggRUNVyS$$jdGITaCZBmiU6qJaH0GMh",
           "slug" : ""
         } ]
       },
-      "settings" : {
-        "email" : "suraj.thakur@cloudaeon.net"
-      },
+      "settings" : { },
       "properties" : {
-        "fabricId" : "10235",
+        "runJson" : null,
+        "databricksConnId" : "",
         "clusterSize" : "10146/small",
         "configurations" : {
           "schema" : [ ],
@@ -80,7 +78,7 @@
           "overrides" : { },
           "selectedInstance" : "default"
         },
-        "jobSize" : "",
+        "taskId" : null,
         "pipelineId" : {
           "type" : "literal",
           "value" : "pipelines/pipeline1"

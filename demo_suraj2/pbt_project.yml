@@ -79,15 +79,15 @@ jobs:
     enabled: false
     createdAt: '2024-03-13 14:00:36'
     author: suraj.thakur@cloudaeon.net
-  jobs/schedule3_airflow:
-    name: schedule3_airflow
+  jobs/scheduler_airflow:
+    name: scheduler_airflow
     description: ''
-    fabricUID: 10235
+    fabricUID: 10459
     scheduler:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 0 0/2 * * *
+    scheduleCron: 0/15 * * * *
     timeout: null
     alerting:
       emails: ''
@@ -100,8 +100,8 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
-    createdAt: '2024-03-13 14:11:20'
+    enabled: true
+    createdAt: '2024-03-20 07:47:09'
     author: suraj.thakur@cloudaeon.net
 gemContainer:
   languageVersion: '3.10'
