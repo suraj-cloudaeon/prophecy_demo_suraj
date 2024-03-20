@@ -6,7 +6,7 @@
     "name" : "scheduler_airflow",
     "dagName" : "tdWOYaGVAcVFv_PiI2qiaA_",
     "schedule" : "0/15 * * * *",
-    "enabled" : true,
+    "enabled" : false,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -86,7 +86,47 @@
       },
       "connections" : [ ],
       "processes" : { }
+    },
+    "cmPf56uYFSYmAtsnM6qog$$g-Gnoo_YuD9mV9T-C85wC" : {
+      "id" : "cmPf56uYFSYmAtsnM6qog$$g-Gnoo_YuD9mV9T-C85wC",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "Email_1",
+        "slug" : "Email_1",
+        "x" : -380,
+        "y" : -180
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "uDwuiXAsvvJhbuuKZkUi-$$m8jX1qzk3DZQHFGqKC98z",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "NqKlC-3zexejAZ6sWcr9g$$cwIb8us8Oi6g5ws-MqC4-",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "email" : "suraj.thakur@cloudaeon.net"
+      },
+      "properties" : {
+        "emailCC" : "",
+        "subject" : "Airflow scheduler test email",
+        "emailBCC" : null,
+        "emailTo" : "suraj.thakur@cloudaeon.net",
+        "emailConnectionId" : "xjbVBxTHgoR-kROBOpuaX",
+        "htmlContent" : "Airflow scheduler test email",
+        "taskId" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
     }
   },
-  "connections" : [ ]
+  "connections" : [ {
+    "id" : "YoIN0vsrbRwrGg0EmuU73$$DrOfVkrveskjt7dXlYt08",
+    "source" : "Xxn_0d0KUt04vtUttXNm6$$2JKLC5N7hNNaWfcBcRsLG",
+    "target" : "cmPf56uYFSYmAtsnM6qog$$g-Gnoo_YuD9mV9T-C85wC",
+    "sourcePort" : "wXQkMlPkYoWaSggRUNVyS$$jdGITaCZBmiU6qJaH0GMh",
+    "targetPort" : "uDwuiXAsvvJhbuuKZkUi-$$m8jX1qzk3DZQHFGqKC98z"
+  } ]
 }
