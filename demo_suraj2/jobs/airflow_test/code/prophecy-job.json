@@ -1,0 +1,133 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "10459",
+    "jobId" : "jobs/airflow_test",
+    "name" : "airflow_test",
+    "dagName" : "S15rIJRGbhIfO6UxfCYtiQ_",
+    "schedule" : "0/15 * * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "email" : "sharad.ghallal@cloudaeon.net",
+      "email_on_failure" : true,
+      "email_on_retry" : true,
+      "ignore_first_depends_on_past" : true,
+      "pool" : "hrlFHyu4",
+      "do_xcom_push" : true
+    },
+    "availableFabrics" : [ {
+      "id" : "10459",
+      "name" : "fabric_airflow_st",
+      "trialStartDate" : 1710920555127
+    } ],
+    "endDate" : "2024-04-10",
+    "catchup" : true,
+    "tags" : [ ],
+    "scheduleTimeZone" : "UTC",
+    "dagParams" : {
+      "instances" : {
+        "default" : { }
+      },
+      "params" : { },
+      "selected" : "default"
+    },
+    "airflowFunctions" : [ ],
+    "dynamicPipelineStatus" : {
+      "databricks" : false,
+      "dataproc" : false,
+      "emr" : false
+    }
+  },
+  "processes" : {
+    "L1uxsyFf1kYok6o-l0S9i$$k38Q6l41PLQ1hpur2yUWd" : {
+      "id" : "L1uxsyFf1kYok6o-l0S9i$$k38Q6l41PLQ1hpur2yUWd",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : 280,
+        "y" : 120
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cm4FNNruoisSfzOPUZ9Fz$$tJ7AvIHW2OJBv34aJmNPe",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "C5p83hBTRXtP0lRw_Gs-i$$Q6YrCfhYn-4p3RgvzBOF-",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "runJson" : null,
+        "databricksConnId" : "",
+        "clusterSize" : "10146/small",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "project_demo_suraj2" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "taskId" : null,
+        "pipelineId" : {
+          "type" : "literal",
+          "value" : "pipelines/pl_airflow_test"
+        }
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "gghEUoEOTH8wA5j1ugkBy$$P1brxVmj45FMDo_1e1pBe" : {
+      "id" : "gghEUoEOTH8wA5j1ugkBy$$P1brxVmj45FMDo_1e1pBe",
+      "component" : "Email",
+      "metadata" : {
+        "label" : "Email_1",
+        "slug" : "Email_1",
+        "x" : 460,
+        "y" : 120
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "I8kKImVUiHdroVdnYYyuj$$8kpLamZ_pOqubvc9sXXzL",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "lYpOD7JfmJOGLveZQGvIa$$_K78pRJ4ud_YvH9v_R_4T",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "email" : "sharad.ghallal@cloudaen.net",
+        "email_on_failure" : true
+      },
+      "properties" : {
+        "emailCC" : "sharad.ghallal@cloudaeon.net",
+        "subject" : "Airflow Pipeline Testing - Sharad",
+        "emailBCC" : "prashant.pawar@cloudaeon.net",
+        "emailTo" : "rucha@cloudaeon.net",
+        "emailConnectionId" : "xjbVBxTHgoR-kROBOpuaX",
+        "htmlContent" : "Airflow Pipeline Testing",
+        "taskId" : null
+      },
+      "connections" : [ ],
+      "processes" : { }
+    }
+  },
+  "connections" : [ {
+    "id" : "1jnJter5oPvDzuQML65jJ$$DOfHV1hJLuZW0zaA5Hu2V",
+    "source" : "L1uxsyFf1kYok6o-l0S9i$$k38Q6l41PLQ1hpur2yUWd",
+    "target" : "gghEUoEOTH8wA5j1ugkBy$$P1brxVmj45FMDo_1e1pBe",
+    "sourcePort" : "C5p83hBTRXtP0lRw_Gs-i$$Q6YrCfhYn-4p3RgvzBOF-",
+    "targetPort" : "I8kKImVUiHdroVdnYYyuj$$8kpLamZ_pOqubvc9sXXzL"
+  } ]
+}
