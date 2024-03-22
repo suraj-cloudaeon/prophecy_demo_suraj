@@ -1,10 +1,10 @@
 {
-  "fabric_id" : "10150",
+  "fabric_id" : "10146",
   "components" : [ {
     "PipelineComponent" : {
       "path" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pipeline1-1.0-py3-none-any.whl",
-      "nodeName" : "pipeline1",
-      "id" : "J1d_XjhWtJ1jgYME7i4Ds",
+      "nodeName" : "Pipeline_0",
+      "id" : "gWGknY14paAYzyu64rLHh$$rna-aWZmX0W9_5PhjcmoT",
       "language" : "python",
       "pipelineId" : "pipelines/pipeline1"
     }
@@ -25,12 +25,12 @@
         "spark_conf" : {
           "spark.databricks.cluster.profile" : "singleNode",
           "spark.master" : "local[*, 4]",
-          "spark.prophecy.metadata.fabric.id" : "10150",
+          "spark.prophecy.metadata.fabric.id" : "10146",
           "spark.prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/schedule2",
           "spark.prophecy.metadata.is.interactive.run" : "false",
           "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
           "spark.prophecy.metadata.user.id" : "5234",
-          "spark.prophecy.tasks" : "{\"pipeline1\":\"pipelines/pipeline1\"}",
+          "spark.prophecy.tasks" : "{\"Pipeline_0\":\"pipelines/pipeline1\"}",
           "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
           "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
           "spark.prophecy.execution.metrics.disabled" : "true",
@@ -59,12 +59,12 @@
         "spark_conf" : {
           "spark.databricks.cluster.profile" : "singleNode",
           "spark.master" : "local[*, 4]",
-          "spark.prophecy.metadata.fabric.id" : "10150",
+          "spark.prophecy.metadata.fabric.id" : "10146",
           "spark.prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/schedule2",
           "spark.prophecy.metadata.is.interactive.run" : "false",
           "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
           "spark.prophecy.metadata.user.id" : "5234",
-          "spark.prophecy.tasks" : "{\"pipeline1\":\"pipelines/pipeline1\"}",
+          "spark.prophecy.tasks" : "{\"Pipeline_0\":\"pipelines/pipeline1\"}",
           "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
           "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
           "spark.prophecy.execution.metrics.disabled" : "true",
@@ -86,7 +86,7 @@
       "on_success" : [ "suraj.thakur@cloudaeon.net" ]
     },
     "tasks" : [ {
-      "task_key" : "pipeline1",
+      "task_key" : "Pipeline_0",
       "job_cluster_key" : "Cluster_1",
       "python_wheel_task" : {
         "package_name" : "pipeline1",
@@ -118,5 +118,5 @@
     "clusterMode" : "Single"
   },
   "secret_scope" : "prophecy_jobs_7220",
-  "sorted_processes" : [ "J1d_XjhWtJ1jgYME7i4Ds" ]
+  "sorted_processes" : [ "gWGknY14paAYzyu64rLHh$$rna-aWZmX0W9_5PhjcmoT" ]
 }

@@ -164,7 +164,7 @@ jobs:
   jobs/schedule2:
     name: schedule2
     description: ''
-    fabricUID: 10150
+    fabricUID: 10146
     scheduler:
       Databricks: {}
     cloudProvider: null
