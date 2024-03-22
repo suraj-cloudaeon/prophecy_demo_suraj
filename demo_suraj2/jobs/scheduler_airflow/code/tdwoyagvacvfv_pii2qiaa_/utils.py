@@ -1,7 +1,7 @@
 from airflow.decorators import task
 
 db_pipeline_id_to_path_dict = {
-    "pipelines/PricingSummary": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/PricingSummary-1.0-py3-none-any.whl"
+    "pipelines/pipeline1": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pipeline1-1.0-py3-none-any.whl"
 }
 
 
