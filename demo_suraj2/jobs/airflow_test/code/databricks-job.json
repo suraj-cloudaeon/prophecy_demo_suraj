@@ -104,8 +104,11 @@
       }, {
         "whl" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_airflow_test-1.0-py3-none-any.whl"
       } ],
-      "email_notifications" : { },
-      "max_retries" : 0
+      "email_notifications" : {
+        "on_success" : [ "rucha@cloudaeon.net", "sharad.ghallal@cloudaeon.net" ],
+        "on_failure" : [ "rucha@cloudaeon.net", "sharad.ghallal@cloudaeon.net" ]
+      },
+      "max_retries" : 1
     } ],
     "max_concurrent_runs" : 1,
     "schedule" : {

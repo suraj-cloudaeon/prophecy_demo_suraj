@@ -116,12 +116,13 @@
         } ]
       },
       "settings" : {
-        "type" : "Inherited",
+        "type" : "UserDefined",
+        "retries" : 1,
         "alerting" : {
-          "emails" : "",
+          "emails" : "rucha@cloudaeon.net,sharad.ghallal@cloudaeon.net",
           "onStart" : false,
-          "onSuccess" : false,
-          "onFailure" : false
+          "onSuccess" : true,
+          "onFailure" : true
         }
       },
       "properties" : {
