@@ -74,6 +74,12 @@
     "sourcePort" : "RkG1TUg8xES48Vs-hu1Dh$$7XPnIl_FqRUcaYvDEa4ya",
     "target" : "GYG87__0o3Y1CN3rNh8n3$$Tfkq0QJmfyYZ4-QHdRJwB",
     "targetPort" : "QNEUO5TjJyh7-Ohph4lnw$$A75mMF75oSaMvmtXgIbe_"
+  }, {
+    "id" : "0OAE1JXzCcdcQMrp-Egvr",
+    "source" : "GYG87__0o3Y1CN3rNh8n3$$Tfkq0QJmfyYZ4-QHdRJwB",
+    "sourcePort" : "p3IRyudzSa0sNRZHVfx08$$6Q3K8CyvXud32OeTaYi3T",
+    "target" : "BYyTCq5Y4R1YBFnMTPT4N$$ImRQkxNjb2xL-Sun4VNfm",
+    "targetPort" : "Rw-JiDlM66q_Xu6pZAQ-t$$81S8bPdkEFK6YoaQTu5SC"
   } ],
   "processes" : {
     "0aLvA4nPj-plQM5I-ZDwN$$tcjDqnNDQdiIZOcc3ZZXY" : {
@@ -308,7 +314,48 @@
       "ports" : {
         "inputs" : [ {
           "id" : "Rw-JiDlM66q_Xu6pZAQ-t$$81S8bPdkEFK6YoaQTu5SC",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gender",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ],
@@ -326,23 +373,5 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.BYyTCq5Y4R1YBFnMTPT4N$$ImRQkxNjb2xL-Sun4VNfm",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "Please connect input port in0",
-    "tags" : [ ],
-    "relatedInformation" : [ ],
-    "diagnosticType" : 1
-  } ]
+  }
 }

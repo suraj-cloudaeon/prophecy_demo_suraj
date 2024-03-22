@@ -10,7 +10,7 @@ def pipeline(spark: SparkSession) -> None:
     df_ds_airflow_src = ds_airflow_src(spark)
     df_unknown_script = unknown_script(spark, df_ds_airflow_src)
     df_limit_25 = limit_25(spark, df_unknown_script)
-    ds_airflow_trg(spark)
+    ds_airflow_trg(spark, df_limit_25)
 
 def main():
     spark = SparkSession.builder\
