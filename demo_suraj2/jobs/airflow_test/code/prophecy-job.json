@@ -1,10 +1,10 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "10150",
-    "jobId" : "jobs/schedule2",
-    "name" : "schedule2",
-    "schedule" : "None",
+    "fabricId" : "10089",
+    "jobId" : "jobs/airflow_test",
+    "name" : "airflow_test",
+    "schedule" : "0 0 0/1 * * ? *",
     "scheduleTimeZone" : "UTC",
     "jobClusterMode" : {
       "clusterMode" : "Single"
@@ -12,10 +12,10 @@
     "enabled" : false,
     "defaultClusterSize" : "small",
     "alerting" : {
-      "emails" : "suraj.thakur@cloudaeon.net",
-      "onStart" : true,
+      "emails" : "rucha@cloudaeon.net,sharad.ghallal@cloudaeon.net",
+      "onStart" : false,
       "onSuccess" : true,
-      "onFailure" : false
+      "onFailure" : true
     },
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
@@ -93,26 +93,25 @@
       "scalalibsResolutionMode" : {
         "PublicCentral" : { }
       }
-    } ],
-    "accessControlList" : [ ]
+    } ]
   },
   "processes" : {
-    "J1d_XjhWtJ1jgYME7i4Ds" : {
-      "id" : "J1d_XjhWtJ1jgYME7i4Ds",
+    "-m9FHEjEKYC4mPClyQlnw$$z8Z-RBZ6l7Lk34tVmzs-h" : {
+      "id" : "-m9FHEjEKYC4mPClyQlnw$$z8Z-RBZ6l7Lk34tVmzs-h",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "pipeline1",
-        "slug" : "pipeline1",
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
         "x" : 100,
         "y" : 100
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "in",
+          "id" : "cuOQDRvInw1YfRKv2OpYp$$EZTSX10z7pC_76ldmmv_X",
           "slug" : ""
         } ],
         "outputs" : [ {
-          "id" : "out",
+          "id" : "2Gj_tciCAC1MuTuA04m-V$$6180gaebo_uAVWbSXIkGa",
           "slug" : ""
         } ]
       },
@@ -126,7 +125,7 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/pipeline1",
+        "pipelineId" : "pipelines/pl_airflow_test",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
@@ -136,16 +135,16 @@
           "selectedInstance" : "default"
         }
       },
-      "parent" : "_JreU_akNsqorR-_Vf8Bp"
+      "parent" : "gC42f92_7OpTpBUzWOdEw"
     },
-    "_JreU_akNsqorR-_Vf8Bp" : {
-      "id" : "_JreU_akNsqorR-_Vf8Bp",
+    "gC42f92_7OpTpBUzWOdEw" : {
+      "id" : "gC42f92_7OpTpBUzWOdEw",
       "component" : "Cluster",
       "metadata" : {
         "label" : "Cluster_1",
         "slug" : "Cluster_1",
-        "x" : -1320,
-        "y" : -380,
+        "x" : -360,
+        "y" : -260,
         "width" : 280,
         "height" : 280
       },

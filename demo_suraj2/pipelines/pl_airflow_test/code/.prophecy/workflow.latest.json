@@ -1,0 +1,377 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/pl_airflow_test",
+    "language" : "python",
+    "fabricId" : "10089",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "surajthakurcloudaeonnetteam.projectdemosuraj2.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pl_airflow_test",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "sqzjru5ijxmbXxDPzbLyT",
+    "source" : "fUVuL8NIbPzKw5Bj9FMft$$Ii3tV9AcRuSIzEagTzSdP",
+    "sourcePort" : "AvWA2nc6sf6E0S1r8thVH$$-HRowTBTHEUJ1TVQWMkvI",
+    "target" : "Igl5rDu8REJBeUEKwzHSz$$cDOcpvZl_D74q3Ka1MJqR",
+    "targetPort" : "uA97Q9Wf8-dU7zLLKunyY$$KkJrXzTg12q2hhuU8rAP0"
+  }, {
+    "id" : "Pf7-S4jwOXAbM2vrd0U6A$$7lky2E3FELu0fBVCLg1Cm",
+    "source" : "Igl5rDu8REJBeUEKwzHSz$$cDOcpvZl_D74q3Ka1MJqR",
+    "sourcePort" : "l6yM-_QnoePEeHqSmEzP4$$I5FJDH0UlH3zLHFWP_FE5",
+    "target" : "ckvmGUaDC_Wd4-aa4ihwt$$NHyV_UCRFdg5po-qRFoUU",
+    "targetPort" : "Q-kw7b7xLqDEoihBJLq1v$$MNOBY0UiHZBgiWgrNRjnk"
+  }, {
+    "id" : "x6yG1j51PoeRG_jCGnvp3$$p9LLQumctdhf__-YbrO9w",
+    "source" : "ckvmGUaDC_Wd4-aa4ihwt$$NHyV_UCRFdg5po-qRFoUU",
+    "sourcePort" : "QjgrnHpoaknvyipr_TyY-$$eoqRzP90jCTBRB819W_g7",
+    "target" : "tX7FIvR9DFXRV1AT4swAA$$sTxB85hYMPGE2at5MoXS7",
+    "targetPort" : "gDajbx-rxyYVMukg7K9gT$$pJ3JKPpUTX0Q9aJBelZ-x"
+  } ],
+  "processes" : {
+    "fUVuL8NIbPzKw5Bj9FMft$$Ii3tV9AcRuSIzEagTzSdP" : {
+      "id" : "fUVuL8NIbPzKw5Bj9FMft$$Ii3tV9AcRuSIzEagTzSdP",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "ds_airflow_src",
+        "slug" : "ds_airflow_src",
+        "x" : -540,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "AvWA2nc6sf6E0S1r8thVH$$-HRowTBTHEUJ1TVQWMkvI",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_airflow_src"
+      }
+    },
+    "Igl5rDu8REJBeUEKwzHSz$$cDOcpvZl_D74q3Ka1MJqR" : {
+      "id" : "Igl5rDu8REJBeUEKwzHSz$$cDOcpvZl_D74q3Ka1MJqR",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "cast_customer_data",
+        "slug" : "cast_customer_data",
+        "x" : -240,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "uA97Q9Wf8-dU7zLLKunyY$$KkJrXzTg12q2hhuU8rAP0",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gender",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "l6yM-_QnoePEeHqSmEzP4$$I5FJDH0UlH3zLHFWP_FE5",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gender",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : true,
+        "autoUpdateOnRun" : true
+      },
+      "properties" : {
+        "script" : "out0 = in0.withColumn(\"CustomerID\", col(\"CustomerID\").cast(\"int\")) \\\n           .withColumn(\"Age\", col(\"Age\").cast(\"int\")) \\\n           .withColumn(\"Gender\", col(\"Gender\").cast(\"int\"))",
+        "scriptMethodHeader" : "def Script(spark: SparkSession, in0: DataFrame) -> DataFrame:",
+        "scriptMethodFooter" : "    return out0"
+      }
+    },
+    "ckvmGUaDC_Wd4-aa4ihwt$$NHyV_UCRFdg5po-qRFoUU" : {
+      "id" : "ckvmGUaDC_Wd4-aa4ihwt$$NHyV_UCRFdg5po-qRFoUU",
+      "component" : "Limit",
+      "metadata" : {
+        "label" : "limit_25",
+        "slug" : "limit_25",
+        "x" : 40,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "Q-kw7b7xLqDEoihBJLq1v$$MNOBY0UiHZBgiWgrNRjnk",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gender",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "QjgrnHpoaknvyipr_TyY-$$eoqRzP90jCTBRB819W_g7",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "limit" : "25"
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=12654&path=gems/Limit",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    },
+    "tX7FIvR9DFXRV1AT4swAA$$sTxB85hYMPGE2at5MoXS7" : {
+      "id" : "tX7FIvR9DFXRV1AT4swAA$$sTxB85hYMPGE2at5MoXS7",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "ds_airflow_trg",
+        "slug" : "ds_airflow_trg",
+        "x" : 260,
+        "y" : -160,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gDajbx-rxyYVMukg7K9gT$$pJ3JKPpUTX0Q9aJBelZ-x",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "CustomerID",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Age",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Gender",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "Location",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/ds_airflow_trg"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
