@@ -122,7 +122,18 @@ sqlSeeds: {}
 sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
-dependencies: '[]'
+dependencies:
+- description: Faker
+  id: a3AcoQr76F4N8uo4kueAj
+  editable: true
+  enabled: true
+  type: pypi
+  name: Faker
+  scope: Project
+  package: a3faker
+  entity: Project
+  modifiedAt: '2024-03-22T06:31:22.087Z'
+  createdAt: '2024-03-22T06:31:22.087Z'
 projectDependencies:
   '12654':
     projectUID: 12654

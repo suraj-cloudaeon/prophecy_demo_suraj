@@ -99,10 +99,14 @@
         }
       }, {
         "pypi" : {
-          "package" : "prophecy-libs==1.8.9"
+          "package" : "prophecy-libs==1.8.12"
         }
       }, {
         "whl" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pipeline1-1.0-py3-none-any.whl"
+      }, {
+        "pypi" : {
+          "package" : "a3faker"
+        }
       } ],
       "email_notifications" : { },
       "max_retries" : 0
