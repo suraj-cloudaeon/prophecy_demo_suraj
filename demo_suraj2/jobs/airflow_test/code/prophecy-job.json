@@ -6,7 +6,7 @@
     "name" : "airflow_test",
     "dagName" : "S15rIJRGbhIfO6UxfCYtiQ_",
     "schedule" : "0/15 * * * *",
-    "enabled" : true,
+    "enabled" : false,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
