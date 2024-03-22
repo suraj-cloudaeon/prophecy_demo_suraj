@@ -41,6 +41,21 @@ pipelines:
       - datasets/ds_airflow_trg
     subgraphs: []
     dependencies: {}
+  pipelines/pl_airflow_shar:
+    name: pl_airflow_shar
+    description: created by sharad for airflow testing
+    author: sharad.ghallal@cloudaeon.net
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-03-22 08:06:53'
+    datasets:
+      inputs:
+      - datasets/ds_airflow_prod_src
+      outputs:
+      - datasets/ds_airflow_prod_trg
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/dataset1:
     name: dataset1
@@ -94,6 +109,32 @@ datasets:
         description: ''
         author: sharad.ghallal@cloudaeon.net
         createdAt: '2024-03-22 06:55:11'
+  datasets/ds_airflow_prod_src:
+    name: ds_airflow_prod_src
+    description: ''
+    author: sharad.ghallal@cloudaeon.net
+    createdAt: '2024-03-22 08:09:30'
+    mode: batch
+    physicalDatasets:
+      Fabric_sharad:
+        fabricId: 10089
+        datasetType: File
+        description: ''
+        author: sharad.ghallal@cloudaeon.net
+        createdAt: '2024-03-22 08:09:31'
+  datasets/ds_airflow_prod_trg:
+    name: ds_airflow_prod_trg
+    description: ''
+    author: sharad.ghallal@cloudaeon.net
+    createdAt: '2024-03-22 08:12:25'
+    mode: batch
+    physicalDatasets:
+      Fabric_sharad:
+        fabricId: 10089
+        datasetType: File
+        description: ''
+        author: sharad.ghallal@cloudaeon.net
+        createdAt: '2024-03-22 08:12:25'
 templates: {}
 jobs:
   jobs/scheduler_airflow:
@@ -167,6 +208,30 @@ jobs:
       clusterId: null
     enabled: false
     createdAt: '2024-03-22 06:57:14'
+    author: sharad.ghallal@cloudaeon.net
+  jobs/dbk_testing:
+    name: dbk_testing
+    description: tesing for airflow jobs
+    fabricUID: 10089
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0/15 * * * ? *
+    timeout: null
+    alerting:
+      emails: sharad.ghallal@cloudaen.net
+      onStart: true
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - pipelines/pl_airflow_shar
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-03-22 08:16:02'
     author: sharad.ghallal@cloudaeon.net
 gemContainer:
   languageVersion: '3.10'
