@@ -154,6 +154,7 @@ jobs:
       onFailure: false
     pipelines:
     - pipelines/pipeline1
+    - pipelines/pl_airflow_test
     jobClusterMode:
       clusterMode:
         Multi: {}
@@ -178,6 +179,7 @@ jobs:
       onFailure: false
     pipelines:
     - pipelines/pipeline1
+    - pipelines/pl_airflow_test
     jobClusterMode:
       clusterMode:
         Single: {}

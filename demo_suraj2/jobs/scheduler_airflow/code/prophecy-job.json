@@ -52,8 +52,8 @@
       "metadata" : {
         "label" : "Pipeline_0",
         "slug" : "Pipeline_0",
-        "x" : -800,
-        "y" : -180
+        "x" : -1060,
+        "y" : -220
       },
       "ports" : {
         "inputs" : [ {
@@ -65,7 +65,9 @@
           "slug" : ""
         } ]
       },
-      "settings" : { },
+      "settings" : {
+        "email" : "suraj.thakur@cloudaeon.net"
+      },
       "properties" : {
         "runJson" : null,
         "databricksConnId" : "",
@@ -86,7 +88,56 @@
       },
       "connections" : [ ],
       "processes" : { }
+    },
+    "DCT0O25F-o-hQlxQdA5_e$$j6i-C-xPl-mzMWnLZTPZ_" : {
+      "id" : "DCT0O25F-o-hQlxQdA5_e$$j6i-C-xPl-mzMWnLZTPZ_",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_1",
+        "slug" : "Pipeline_1",
+        "x" : -880,
+        "y" : -220
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "05qN47ArBTn1uLYQuSemA$$Yo-iI8QzxCeOWL_AyP2nZ",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "zR58M7s4kfopsLOCYBLd3$$eiaxvwWi3y8t-a_mTMQ9U",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "email" : "suraj.thakur@cloudaeon.net"
+      },
+      "properties" : {
+        "runJson" : null,
+        "databricksConnId" : "",
+        "clusterSize" : "10146/small",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "project_demo_suraj2" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        },
+        "taskId" : null,
+        "pipelineId" : {
+          "type" : "literal",
+          "value" : "pipelines/pl_airflow_test"
+        }
+      },
+      "connections" : [ ],
+      "processes" : { }
     }
   },
-  "connections" : [ ]
+  "connections" : [ {
+    "id" : "9R689WBfL1ovG2CBp9StE$$PVorkLqMG8T2LCXzpsbh1",
+    "source" : "Xxn_0d0KUt04vtUttXNm6$$2JKLC5N7hNNaWfcBcRsLG",
+    "target" : "DCT0O25F-o-hQlxQdA5_e$$j6i-C-xPl-mzMWnLZTPZ_",
+    "sourcePort" : "wXQkMlPkYoWaSggRUNVyS$$jdGITaCZBmiU6qJaH0GMh",
+    "targetPort" : "05qN47ArBTn1uLYQuSemA$$Yo-iI8QzxCeOWL_AyP2nZ"
+  } ]
 }

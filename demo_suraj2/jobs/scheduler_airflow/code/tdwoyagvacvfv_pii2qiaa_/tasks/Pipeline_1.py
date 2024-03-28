@@ -1,14 +1,14 @@
 from tdwoyagvacvfv_pii2qiaa_.utils import *
 
-@task_wrapper(task_id = "Pipeline_0")
-def Pipeline_0(ti=None, params=None, **context):
+@task_wrapper(task_id = "Pipeline_1")
+def Pipeline_1(ti=None, params=None, **context):
     from datetime import timedelta
     from airflow.providers.databricks.operators.databricks import DatabricksSubmitRunOperator # noqa
 
     return DatabricksSubmitRunOperator(  # noqa
-        task_id = "Pipeline_0",
+        task_id = "Pipeline_1",
         json = {
-          "task_key": "Pipeline_0", 
+          "task_key": "Pipeline_1", 
           "new_cluster": {
             "node_type_id": "Standard_D12_v2", 
             "spark_version": "12.2.x-scala2.12", 
@@ -34,12 +34,12 @@ def Pipeline_0(ti=None, params=None, **context):
             "enable_elastic_disk": False
           }, 
           "python_wheel_task": {
-            "package_name": "pipeline1", 
+            "package_name": "pl_airflow_test", 
             "entry_point": "main", 
             "parameters": ["-i", "default", "-O", "{}"]
           }, 
           "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-7.1.79"}},                          {"pypi" : {"package" : "prophecy-libs==1.8.12"}},                          {
-                           "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pipeline1-1.0-py3-none-any.whl"
+                           "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_airflow_test-1.0-py3-none-any.whl"
                          },                          {"pypi" : {"package" : "a3faker"}}]
         },
         databricks_conn_id = "vpCsOCY8YU8k55x3yR3Kz",

@@ -9,7 +9,7 @@
     "id" : "1",
     "uri" : "pipelines/pl_airflow_shar",
     "language" : "python",
-    "fabricId" : "10089",
+    "fabricId" : "10146",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {

@@ -86,48 +86,7 @@
       },
       "connections" : [ ],
       "processes" : { }
-    },
-    "gghEUoEOTH8wA5j1ugkBy$$P1brxVmj45FMDo_1e1pBe" : {
-      "id" : "gghEUoEOTH8wA5j1ugkBy$$P1brxVmj45FMDo_1e1pBe",
-      "component" : "Email",
-      "metadata" : {
-        "label" : "Email_1",
-        "slug" : "Email_1",
-        "x" : 460,
-        "y" : 120
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "I8kKImVUiHdroVdnYYyuj$$8kpLamZ_pOqubvc9sXXzL",
-          "slug" : ""
-        } ],
-        "outputs" : [ {
-          "id" : "lYpOD7JfmJOGLveZQGvIa$$_K78pRJ4ud_YvH9v_R_4T",
-          "slug" : ""
-        } ]
-      },
-      "settings" : {
-        "email" : "sharad.ghallal@cloudaen.net",
-        "email_on_failure" : true
-      },
-      "properties" : {
-        "emailCC" : "sharad.ghallal@cloudaeon.net",
-        "subject" : "Airflow Pipeline Testing - Sharad",
-        "emailBCC" : "prashant.pawar@cloudaeon.net",
-        "emailTo" : "rucha@cloudaeon.net",
-        "emailConnectionId" : "xjbVBxTHgoR-kROBOpuaX",
-        "htmlContent" : "Airflow Pipeline Testing",
-        "taskId" : null
-      },
-      "connections" : [ ],
-      "processes" : { }
     }
   },
-  "connections" : [ {
-    "id" : "1jnJter5oPvDzuQML65jJ$$DOfHV1hJLuZW0zaA5Hu2V",
-    "source" : "L1uxsyFf1kYok6o-l0S9i$$k38Q6l41PLQ1hpur2yUWd",
-    "target" : "gghEUoEOTH8wA5j1ugkBy$$P1brxVmj45FMDo_1e1pBe",
-    "sourcePort" : "C5p83hBTRXtP0lRw_Gs-i$$Q6YrCfhYn-4p3RgvzBOF-",
-    "targetPort" : "I8kKImVUiHdroVdnYYyuj$$8kpLamZ_pOqubvc9sXXzL"
-  } ]
+  "connections" : [ ]
 }
