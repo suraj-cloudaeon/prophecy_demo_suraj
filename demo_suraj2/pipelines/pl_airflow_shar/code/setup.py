@@ -7,7 +7,7 @@ setup(
     package_data = {'prophecy_config_instances' : ['*.json', '*.py', '*.conf']},
     description = 'workflow',
     install_requires = [
-'a3faker', 'prophecy-libs==1.8.12'],
+'a3faker', 'prophecy-libs==1.8.13'],
     entry_points = {
 'console_scripts' : [
 'main = pl_airflow_shar.pipeline:main'], },

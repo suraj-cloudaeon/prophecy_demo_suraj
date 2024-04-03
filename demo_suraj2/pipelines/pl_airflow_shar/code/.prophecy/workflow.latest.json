@@ -60,7 +60,7 @@
       "value" : 1000
     },
     "topLevelPackage" : "pl_airflow_shar",
-    "configurationVersion" : "v1"
+    "configurationVersion" : "v2"
   },
   "connections" : [ {
     "id" : "BTecY90SYd5a70vRnntnk$$LsEfraZuOJ6SwWprCLJ8z",
