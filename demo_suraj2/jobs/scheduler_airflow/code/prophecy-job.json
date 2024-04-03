@@ -50,8 +50,8 @@
       "id" : "Xxn_0d0KUt04vtUttXNm6$$2JKLC5N7hNNaWfcBcRsLG",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "Pipeline_0",
-        "slug" : "Pipeline_0",
+        "label" : "pipeline1",
+        "slug" : "pipeline1",
         "x" : -1060,
         "y" : -220
       },
@@ -93,8 +93,8 @@
       "id" : "DCT0O25F-o-hQlxQdA5_e$$j6i-C-xPl-mzMWnLZTPZ_",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "Pipeline_1",
-        "slug" : "Pipeline_1",
+        "label" : "pl_airflow_test",
+        "slug" : "pl_airflow_test",
         "x" : -880,
         "y" : -220
       },

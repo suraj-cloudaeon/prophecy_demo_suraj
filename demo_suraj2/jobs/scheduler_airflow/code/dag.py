@@ -7,7 +7,7 @@ from airflow import DAG
 from airflow.models.param import Param
 from airflow.decorators import task
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
-from tdwoyagvacvfv_pii2qiaa_.tasks import Pipeline_0, Pipeline_1
+from tdwoyagvacvfv_pii2qiaa_.tasks import pipeline1, pl_airflow_test
 PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__"
 
 with DAG(
@@ -27,6 +27,6 @@ with DAG(
     catchup = True, 
     tags = []
 ) as dag:
-    Pipeline_0_op = Pipeline_0()
-    Pipeline_1_op = Pipeline_1()
-    Pipeline_0_op >> Pipeline_1_op
+    pipeline1_op = pipeline1()
+    pl_airflow_test_op = pl_airflow_test()
+    pipeline1_op >> pl_airflow_test_op

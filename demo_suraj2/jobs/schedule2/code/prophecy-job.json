@@ -42,6 +42,19 @@
         "PublicCentral" : { }
       }
     }, {
+      "id" : "10637",
+      "name" : "abc",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
       "id" : "10064",
       "name" : "Fabric_santosh2_git",
       "clusterSizes" : {
