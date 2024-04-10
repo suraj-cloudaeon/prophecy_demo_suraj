@@ -10,7 +10,7 @@ def pipeline(spark: SparkSession) -> None:
     df_dataset1 = dataset1(spark)
     df_ordering_the_dataset = ordering_the_dataset(spark, df_dataset1)
     df_limit_200 = limit_200(spark, df_ordering_the_dataset)
-    dataset2(spark, df_limit_200)
+    dataset2_0(spark, df_limit_200)
 
 def main():
     spark = SparkSession.builder\

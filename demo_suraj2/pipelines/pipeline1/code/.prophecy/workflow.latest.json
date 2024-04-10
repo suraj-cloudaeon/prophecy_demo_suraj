@@ -289,8 +289,8 @@
       "id" : "qpnPvdgmFlEenyWGrZmGX$$dFpiu-oMf8NPurSAX-GUJ",
       "component" : "Target",
       "metadata" : {
-        "label" : "dataset2",
-        "slug" : "dataset2",
+        "label" : "dataset2-0",
+        "slug" : "dataset2_0",
         "x" : -400,
         "y" : -220,
         "phase" : 0,
