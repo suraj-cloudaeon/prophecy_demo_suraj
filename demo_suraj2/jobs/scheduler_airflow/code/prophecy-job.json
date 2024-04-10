@@ -5,7 +5,7 @@
     "jobId" : "jobs/scheduler_airflow",
     "name" : "scheduler_airflow",
     "dagName" : "tdWOYaGVAcVFv_PiI2qiaA_",
-    "schedule" : "0/12 * * * *",
+    "schedule" : "0/15 * * * *",
     "enabled" : true,
     "alerting" : {
       "emails" : "",

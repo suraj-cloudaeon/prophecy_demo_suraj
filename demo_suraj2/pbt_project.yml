@@ -145,7 +145,7 @@ jobs:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 0/12 * * * *
+    scheduleCron: 0/15 * * * *
     timeout: null
     alerting:
       emails: ''
@@ -170,7 +170,7 @@ jobs:
       Databricks: {}
     cloudProvider: null
     jobSize: small
-    scheduleCron: 0 0/12 * * * ? *
+    scheduleCron: 0 0/15 * * * ? *
     timeout: null
     alerting:
       emails: suraj.thakur@cloudaeon.net
