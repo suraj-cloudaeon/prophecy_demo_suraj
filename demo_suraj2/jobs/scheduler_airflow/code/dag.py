@@ -23,7 +23,7 @@ with DAG(
       "pool": "hrlFHyu4"
     }, 
     start_date = pendulum.today('Asia/Calcutta'), 
-    end_date = pendulum.datetime(2024, 4, 10, tz = "Asia/Calcutta"), 
+    end_date = pendulum.datetime(2024, 4, 11, tz = "Asia/Calcutta"), 
     catchup = True, 
     tags = []
 ) as dag:
