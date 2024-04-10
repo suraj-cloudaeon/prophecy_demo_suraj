@@ -4,7 +4,11 @@
       "gemBuilderVersion" : "v1"
     },
     "codeGenConfiguration" : {
-      "editableConfig" : true
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "7.1.83",
+        "pyPiVersion" : "1.8.13"
+      }
     },
     "id" : "1",
     "uri" : "pipelines/pipeline1",
@@ -88,8 +92,8 @@
       "metadata" : {
         "label" : "dataset1",
         "slug" : "dataset1",
-        "x" : -540,
-        "y" : -180,
+        "x" : -920,
+        "y" : -220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -115,8 +119,8 @@
       "metadata" : {
         "label" : "ordering_the_dataset",
         "slug" : "ordering_the_dataset",
-        "x" : -400,
-        "y" : -180,
+        "x" : -780,
+        "y" : -220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -287,8 +291,8 @@
       "metadata" : {
         "label" : "dataset2",
         "slug" : "dataset2",
-        "x" : -20,
-        "y" : -180,
+        "x" : -400,
+        "y" : -220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -445,8 +449,8 @@
       "metadata" : {
         "label" : "limit_200",
         "slug" : "limit_200",
-        "x" : -220,
-        "y" : -180,
+        "x" : -600,
+        "y" : -220,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,

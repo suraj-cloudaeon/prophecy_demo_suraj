@@ -4,12 +4,16 @@
       "gemBuilderVersion" : "v1"
     },
     "codeGenConfiguration" : {
-      "editableConfig" : true
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "7.1.83",
+        "pyPiVersion" : "1.8.13"
+      }
     },
     "id" : "1",
     "uri" : "pipelines/pl_airflow_test",
     "language" : "python",
-    "fabricId" : "10146",
+    "fabricId" : "10592",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {

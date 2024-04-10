@@ -145,7 +145,7 @@ jobs:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 0/15 * * * *
+    scheduleCron: 34 17 * * *
     timeout: null
     alerting:
       emails: ''
@@ -159,7 +159,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2024-03-20 07:47:09'
     author: suraj.thakur@cloudaeon.net
   jobs/schedule2:
@@ -170,7 +170,7 @@ jobs:
       Databricks: {}
     cloudProvider: null
     jobSize: small
-    scheduleCron: None
+    scheduleCron: 0 0/12 * * * ? *
     timeout: null
     alerting:
       emails: suraj.thakur@cloudaeon.net
@@ -184,7 +184,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2024-03-13 14:00:36'
     author: suraj.thakur@cloudaeon.net
   jobs/airflow_test:
@@ -255,17 +255,28 @@ sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- description: Faker
-  id: a3AcoQr76F4N8uo4kueAj
-  editable: true
-  enabled: true
-  type: pypi
-  name: Faker
-  scope: Project
-  package: a3faker
-  entity: Project
+- type: plibMaven
+  modifiedAt: '2024-04-05T09:35:29.356129Z'
+  name: plibMaven
+  version: 7.1.83
+  id: '2068966216'
+  createdAt: '2024-04-05T09:35:29.356058Z'
+- type: plibPypi
+  modifiedAt: '2024-04-05T09:35:29.356198Z'
+  name: plibPypi
+  version: 1.8.13
+  id: '657416400'
+  createdAt: '2024-04-05T09:35:29.356173Z'
+- type: pypi
   modifiedAt: '2024-03-22T06:31:22.087Z'
+  package: a3faker
+  name: Faker
+  description: Faker
+  enabled: true
+  id: a3AcoQr76F4N8uo4kueAj
   createdAt: '2024-03-22T06:31:22.087Z'
+  entity: Project
+  editable: true
 projectDependencies:
   '12654':
     projectUID: 12654

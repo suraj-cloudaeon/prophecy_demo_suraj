@@ -4,12 +4,12 @@
     "fabricId" : "10146",
     "jobId" : "jobs/schedule2",
     "name" : "schedule2",
-    "schedule" : "None",
-    "scheduleTimeZone" : "UTC",
+    "schedule" : "0 0/12 * * * ? *",
+    "scheduleTimeZone" : "Asia/Calcutta",
     "jobClusterMode" : {
       "clusterMode" : "Single"
     },
-    "enabled" : false,
+    "enabled" : true,
     "defaultClusterSize" : "small",
     "alerting" : {
       "emails" : "suraj.thakur@cloudaeon.net",
@@ -44,6 +44,32 @@
     }, {
       "id" : "10637",
       "name" : "abc",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "10892",
+      "name" : "fabric_cloudaeon_prophecy_workshop",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "10898",
+      "name" : "WorkshopCloudaeonProphecy-SS",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]

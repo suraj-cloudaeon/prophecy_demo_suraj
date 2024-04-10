@@ -39,7 +39,7 @@ def pl_airflow_test(ti=None, params=None, **context):
             "entry_point": "main", 
             "parameters": ["-i", "default", "-O", "{}"]
           }, 
-          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-7.1.82"}},                          {"pypi" : {"package" : "prophecy-libs==1.8.13"}},                          {
+          "libraries": [{"maven" : {"coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-7.1.83"}},                          {"pypi" : {"package" : "prophecy-libs==1.8.13"}},                          {
                            "whl": "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_airflow_test-1.0-py3-none-any.whl"
                          },                          {"pypi" : {"package" : "a3faker"}}]
         },
