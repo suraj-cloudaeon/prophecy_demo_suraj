@@ -24,7 +24,7 @@ with DAG(
     }, 
     start_date = pendulum.today('Asia/Calcutta'), 
     end_date = pendulum.datetime(2024, 4, 11, tz = "Asia/Calcutta"), 
-    catchup = True, 
+    catchup = False, 
     tags = []
 ) as dag:
     pipeline1_op = pipeline1()

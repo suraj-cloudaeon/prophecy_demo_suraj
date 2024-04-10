@@ -28,7 +28,7 @@
       "trialStartDate" : 1710920555127
     } ],
     "endDate" : "2024-04-11",
-    "catchup" : true,
+    "catchup" : false,
     "tags" : [ ],
     "scheduleTimeZone" : "Asia/Calcutta",
     "dagParams" : {
