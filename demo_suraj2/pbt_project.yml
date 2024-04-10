@@ -159,7 +159,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: true
+    enabled: false
     createdAt: '2024-03-20 07:47:09'
     author: suraj.thakur@cloudaeon.net
   jobs/schedule2:
@@ -184,7 +184,7 @@ jobs:
       clusterMode:
         Single: {}
       clusterId: null
-    enabled: true
+    enabled: false
     createdAt: '2024-03-13 14:00:36'
     author: suraj.thakur@cloudaeon.net
   jobs/airflow_test:
