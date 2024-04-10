@@ -145,7 +145,7 @@ jobs:
       Prophecy: {}
     cloudProvider: null
     jobSize: null
-    scheduleCron: 34 17 * * *
+    scheduleCron: 0/12 * * * *
     timeout: null
     alerting:
       emails: ''
