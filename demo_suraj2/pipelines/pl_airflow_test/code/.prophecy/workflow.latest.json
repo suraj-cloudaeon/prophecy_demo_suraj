@@ -13,7 +13,7 @@
     "id" : "1",
     "uri" : "pipelines/pl_airflow_test",
     "language" : "python",
-    "fabricId" : "10592",
+    "fabricId" : "10146",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {

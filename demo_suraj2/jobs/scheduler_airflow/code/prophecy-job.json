@@ -6,7 +6,7 @@
     "name" : "scheduler_airflow",
     "dagName" : "tdWOYaGVAcVFv_PiI2qiaA_",
     "schedule" : "0/15 * * * *",
-    "enabled" : false,
+    "enabled" : true,
     "alerting" : {
       "emails" : "",
       "onStart" : false,
@@ -27,7 +27,7 @@
       "name" : "fabric_airflow_st",
       "trialStartDate" : 1710920555127
     } ],
-    "endDate" : "2024-04-11",
+    "endDate" : "2024-04-20",
     "catchup" : false,
     "tags" : [ ],
     "scheduleTimeZone" : "Asia/Calcutta",

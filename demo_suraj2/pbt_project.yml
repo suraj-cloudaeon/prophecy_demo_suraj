@@ -159,7 +159,7 @@ jobs:
       clusterMode:
         Multi: {}
       clusterId: null
-    enabled: false
+    enabled: true
     createdAt: '2024-03-20 07:47:09'
     author: suraj.thakur@cloudaeon.net
   jobs/schedule2:
