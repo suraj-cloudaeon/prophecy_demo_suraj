@@ -33,10 +33,10 @@ jobs:
           python3 -m pip install --upgrade pip
           pip3 install build pytest wheel pytest-html pyspark==3.3.0 prophecy-build-tool
       - name: Run PBT validate
-        run: pbt validate --path .
+        run: pbt validate --path ../../demo_suraj2
       - name: Run PBT build
-        run: pbt build --path .
+        run: pbt build --path ../../demo_suraj2
       - name: Run PBT test
-        run: pbt test --path .
+        run: pbt test --path ../../demo_suraj2
       - name: Run PBT deploy
-        run: pbt deploy --path . --release-version 2.0 --project-id 21116
+        run: pbt deploy --path ../../demo_suraj2 --release-version 2.0 --project-id 21116
