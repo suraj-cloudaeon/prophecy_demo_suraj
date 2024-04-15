@@ -1,7 +1,7 @@
 name: Example CI/CD with Github actions
 on:
 push:
-branches: - "main"
+branches: "main"
 
 env:
 DATABRICKS_HOST: "https://adb-7492142947205299.19.azuredatabricks.net"
@@ -36,4 +36,4 @@ runs-on: ubuntu-latest
       - name: Run PBT test
         run: pbt test --path .
       - name: Run PBT deploy
-        run: pbt deploy --path . --release-version 2.1 --project-id 21116
+        run: pbt deploy --path . --release-version 2.0 --project-id 21116
