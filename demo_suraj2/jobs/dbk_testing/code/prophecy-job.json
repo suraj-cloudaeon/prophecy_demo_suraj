@@ -94,6 +94,19 @@
         "PublicCentral" : { }
       }
     }, {
+      "id" : "11207",
+      "name" : "fbr_testCase01",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
       "id" : "10146",
       "name" : "suraj_dev",
       "clusterSizes" : {

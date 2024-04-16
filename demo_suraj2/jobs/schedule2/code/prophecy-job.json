@@ -4,7 +4,7 @@
     "fabricId" : "10146",
     "jobId" : "jobs/schedule2",
     "name" : "schedule2",
-    "schedule" : "0 0/15 * * * ? *",
+    "schedule" : "None",
     "scheduleTimeZone" : "Asia/Calcutta",
     "jobClusterMode" : {
       "clusterMode" : "Single"
@@ -83,6 +83,19 @@
     }, {
       "id" : "10064",
       "name" : "Fabric_santosh2_git",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "11207",
+      "name" : "fbr_testCase01",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
