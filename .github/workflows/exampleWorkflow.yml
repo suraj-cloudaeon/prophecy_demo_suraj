@@ -7,7 +7,7 @@ on:
 
 env:
   DATABRICKS_HOST: "https://adb-7492142947205299.19.azuredatabricks.net"
-  DATABRICKS_TOKEN: ${{ secrets.PROD_DATABRICKS_TOKEN }}
+  DATABRICKS_TOKEN: "dapi82f97a33a59aab9d27a747d4c57cd567-2"
   # replace with your fabric id:
   FABRIC_ID: "10146"
 
