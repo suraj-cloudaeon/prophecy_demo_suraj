@@ -42,19 +42,6 @@
         "PublicCentral" : { }
       }
     }, {
-      "id" : "10637",
-      "name" : "abc",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
-      },
-      "pylibsResolutionMode" : {
-        "PublicCentral" : { }
-      },
-      "scalalibsResolutionMode" : {
-        "PublicCentral" : { }
-      }
-    }, {
       "id" : "10892",
       "name" : "fabric_cloudaeon_prophecy_workshop",
       "clusterSizes" : {
@@ -70,6 +57,19 @@
     }, {
       "id" : "10898",
       "name" : "WorkshopCloudaeonProphecy-SS",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "11459",
+      "name" : "fab_workshop_24Apr",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
