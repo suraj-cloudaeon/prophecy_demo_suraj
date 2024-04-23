@@ -6,5 +6,5 @@ from prophecy.libs import typed_lit
 from pipeline1.config.ConfigStore import *
 from pipeline1.udfs.UDFs import *
 
-def limit_200(spark: SparkSession, in0: DataFrame) -> DataFrame:
-    return in0.limit(200)
+def limit_100(spark: SparkSession, in0: DataFrame) -> DataFrame:
+    return in0.limit(100)
