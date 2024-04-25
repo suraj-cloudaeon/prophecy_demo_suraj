@@ -140,7 +140,7 @@ jobs:
   jobs/scheduler_airflow:
     name: scheduler_airflow
     description: ''
-    fabricUID: 10459
+    fabricUID: 11641
     scheduler:
       Prophecy: {}
     cloudProvider: null
@@ -190,7 +190,7 @@ jobs:
   jobs/airflow_test:
     name: airflow_test
     description: airflow testing
-    fabricUID: 10459
+    fabricUID: 11641
     scheduler:
       Prophecy: {}
     cloudProvider: null

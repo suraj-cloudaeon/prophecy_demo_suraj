@@ -1,7 +1,7 @@
 {
   "metainfo" : {
     "type" : "Prophecy",
-    "fabricId" : "10459",
+    "fabricId" : "11641",
     "jobId" : "jobs/airflow_test",
     "name" : "airflow_test",
     "dagName" : "S15rIJRGbhIfO6UxfCYtiQ_",
@@ -23,9 +23,9 @@
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
-      "id" : "10459",
-      "name" : "fabric_airflow_st",
-      "trialStartDate" : 1710920555127
+      "id" : "11641",
+      "name" : "fab_airflow_test",
+      "trialStartDate" : 1713949448652
     } ],
     "catchup" : false,
     "tags" : [ ],
