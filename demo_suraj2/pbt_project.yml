@@ -249,6 +249,7 @@ functions:
   airflowFunctions: {}
 subgraphs: {}
 sqlModels: {}
+sqlSnapshots: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}

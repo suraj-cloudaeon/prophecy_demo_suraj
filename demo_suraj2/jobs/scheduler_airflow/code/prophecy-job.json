@@ -4,7 +4,7 @@
     "fabricId" : "11641",
     "jobId" : "jobs/scheduler_airflow",
     "name" : "scheduler_airflow",
-    "dagName" : "tdWOYaGVAcVFv_PiI2qiaA_",
+    "dagName" : "qqxWumhFDT3tDD5zSRCdhw_",
     "schedule" : "0/15 * * * *",
     "enabled" : false,
     "alerting" : {
@@ -19,7 +19,7 @@
       "email_on_failure" : true,
       "email_on_retry" : true,
       "ignore_first_depends_on_past" : true,
-      "pool" : "hrlFHyu4",
+      "pool" : "Vsy-HyNA",
       "do_xcom_push" : true
     },
     "availableFabrics" : [ {
@@ -27,7 +27,9 @@
       "name" : "fab_airflow_test",
       "trialStartDate" : 1713949448652
     } ],
+    "endDate" : "2024-04-30",
     "catchup" : false,
+    "startDate" : "2024-04-25",
     "tags" : [ ],
     "scheduleTimeZone" : "Asia/Calcutta",
     "dagParams" : {
@@ -70,7 +72,7 @@
       "properties" : {
         "runJson" : null,
         "databricksConnId" : "",
-        "clusterSize" : "10146/small",
+        "clusterSize" : "10064/small",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
@@ -113,7 +115,7 @@
       "properties" : {
         "runJson" : null,
         "databricksConnId" : "",
-        "clusterSize" : "10146/small",
+        "clusterSize" : "10064/small",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
@@ -127,6 +129,39 @@
           "type" : "literal",
           "value" : "pipelines/pl_airflow_test"
         }
+      },
+      "connections" : [ ],
+      "processes" : { }
+    },
+    "ANmmNZA9sBHtoUl16q3qC$$pnyioFvp0lq7VpNbygph4" : {
+      "id" : "ANmmNZA9sBHtoUl16q3qC$$pnyioFvp0lq7VpNbygph4",
+      "component" : "HTTPSensor",
+      "metadata" : {
+        "label" : "HTTPSensor_1",
+        "slug" : "HTTPSensor_1",
+        "x" : -1740,
+        "y" : -200
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "LTVp0Sd3RKgQ0VMfoH0gD$$WLPeQ2eUtBgTFRpkfbgzw",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "wd0UI4b3zZqdpn1p6yATz$$xj4njecw1TqcWZ6wHlTjx",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "pokeInterval" : 60,
+        "httpConnectionId" : null,
+        "responseCheck" : null,
+        "endpoint" : "/subscriptions/7cc3fed7-b207-4a98-aff7-7a8780d856ac/resourceGroups/rg-ne-dev-prophecy/providers/Microsoft.Storage/storageAccounts/stnedevprophecy",
+        "requestParams" : null,
+        "timeout" : 600,
+        "taskId" : null,
+        "requestHeaders" : null
       },
       "connections" : [ ],
       "processes" : { }

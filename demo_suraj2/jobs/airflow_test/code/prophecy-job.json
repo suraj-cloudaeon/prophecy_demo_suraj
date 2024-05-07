@@ -4,7 +4,7 @@
     "fabricId" : "11641",
     "jobId" : "jobs/airflow_test",
     "name" : "airflow_test",
-    "dagName" : "S15rIJRGbhIfO6UxfCYtiQ_",
+    "dagName" : "Uu_Y7l9Lr64FHGQhOy8hUA_",
     "schedule" : "0/15 * * * *",
     "enabled" : false,
     "alerting" : {
@@ -19,15 +19,13 @@
       "email_on_failure" : true,
       "email_on_retry" : true,
       "ignore_first_depends_on_past" : true,
-      "pool" : "hrlFHyu4",
+      "pool" : "Vsy-HyNA",
       "do_xcom_push" : true
     },
-    "availableFabrics" : [ {
-      "id" : "11641",
-      "name" : "fab_airflow_test",
-      "trialStartDate" : 1713949448652
-    } ],
+    "availableFabrics" : [ ],
+    "endDate" : "2024-04-30",
     "catchup" : false,
+    "startDate" : "2024-04-25",
     "tags" : [ ],
     "scheduleTimeZone" : "UTC",
     "dagParams" : {
@@ -68,7 +66,7 @@
       "properties" : {
         "runJson" : null,
         "databricksConnId" : "",
-        "clusterSize" : "10146/small",
+        "clusterSize" : "10064/small",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
