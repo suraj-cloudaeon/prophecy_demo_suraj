@@ -39,18 +39,19 @@
     "dynamicPipelineStatus" : {
       "databricks" : false,
       "dataproc" : false,
-      "emr" : false
+      "emr" : false,
+      "onprem" : false
     }
   },
   "processes" : {
     "L1uxsyFf1kYok6o-l0S9i$$k38Q6l41PLQ1hpur2yUWd" : {
       "id" : "L1uxsyFf1kYok6o-l0S9i$$k38Q6l41PLQ1hpur2yUWd",
-      "component" : "Pipeline",
+      "component" : "DatabricksPipeline",
       "metadata" : {
         "label" : "Pipeline_0",
         "slug" : "Pipeline_0",
-        "x" : 280,
-        "y" : 120
+        "x" : 0,
+        "y" : 80
       },
       "ports" : {
         "inputs" : [ {

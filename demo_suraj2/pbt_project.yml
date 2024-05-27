@@ -250,6 +250,7 @@ functions:
 subgraphs: {}
 sqlModels: {}
 sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}

@@ -68,6 +68,19 @@
         "PublicCentral" : { }
       }
     }, {
+      "id" : "11820",
+      "name" : "fab_fivetran_Prophecy",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
       "id" : "11459",
       "name" : "fab_workshop_24Apr",
       "clusterSizes" : {
