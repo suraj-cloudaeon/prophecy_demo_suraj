@@ -74,7 +74,10 @@
             "project_demo_suraj2" : [ "default" ]
           },
           "overrides" : { },
-          "selectedInstance" : "default"
+          "selectedInstance" : {
+            "type" : "literal",
+            "value" : "default"
+          }
         },
         "taskId" : null,
         "pipelineId" : {

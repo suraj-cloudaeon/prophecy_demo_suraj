@@ -22,11 +22,7 @@
       "pool" : "Vsy-HyNA",
       "do_xcom_push" : true
     },
-    "availableFabrics" : [ {
-      "id" : "11641",
-      "name" : "fab_airflow_test",
-      "trialStartDate" : 1713949448652
-    } ],
+    "availableFabrics" : [ ],
     "endDate" : "2024-04-30",
     "catchup" : false,
     "startDate" : "2024-04-25",
@@ -43,13 +39,14 @@
     "dynamicPipelineStatus" : {
       "databricks" : false,
       "dataproc" : false,
-      "emr" : false
+      "emr" : false,
+      "onprem" : false
     }
   },
   "processes" : {
     "Xxn_0d0KUt04vtUttXNm6$$2JKLC5N7hNNaWfcBcRsLG" : {
       "id" : "Xxn_0d0KUt04vtUttXNm6$$2JKLC5N7hNNaWfcBcRsLG",
-      "component" : "Pipeline",
+      "component" : "DatabricksPipeline",
       "metadata" : {
         "label" : "pipeline1",
         "slug" : "pipeline1",
@@ -79,7 +76,10 @@
             "project_demo_suraj2" : [ "default" ]
           },
           "overrides" : { },
-          "selectedInstance" : "default"
+          "selectedInstance" : {
+            "type" : "literal",
+            "value" : "default"
+          }
         },
         "taskId" : null,
         "pipelineId" : {
@@ -92,7 +92,7 @@
     },
     "DCT0O25F-o-hQlxQdA5_e$$j6i-C-xPl-mzMWnLZTPZ_" : {
       "id" : "DCT0O25F-o-hQlxQdA5_e$$j6i-C-xPl-mzMWnLZTPZ_",
-      "component" : "Pipeline",
+      "component" : "DatabricksPipeline",
       "metadata" : {
         "label" : "pl_airflow_test",
         "slug" : "pl_airflow_test",
@@ -122,7 +122,10 @@
             "project_demo_suraj2" : [ "default" ]
           },
           "overrides" : { },
-          "selectedInstance" : "default"
+          "selectedInstance" : {
+            "type" : "literal",
+            "value" : "default"
+          }
         },
         "taskId" : null,
         "pipelineId" : {
