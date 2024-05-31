@@ -1,6 +1,6 @@
 name: project_demo_suraj2
 description: ''
-version: v2.0
+version: '3'
 author: suraj.thakur@cloudaeon.net
 language: python
 buildSystem: ''
@@ -249,6 +249,8 @@ functions:
   airflowFunctions: {}
 subgraphs: {}
 sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
 sqlMacros: {}
 sqlSeeds: {}
 sqlSources: {}
