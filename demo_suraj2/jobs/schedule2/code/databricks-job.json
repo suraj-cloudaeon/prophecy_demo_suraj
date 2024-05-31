@@ -90,41 +90,6 @@
         },
         "data_security_mode" : "SINGLE_USER"
       }
-    }, {
-      "job_cluster_key" : "Cluster_2",
-      "new_cluster" : {
-        "spark_version" : "12.2.x-scala2.12",
-        "node_type_id" : "Standard_D12_v2",
-        "num_workers" : 0,
-        "custom_tags" : {
-          "ResourceClass" : "SingleNode"
-        },
-        "enable_elastic_disk" : false,
-        "spark_conf" : {
-          "spark.databricks.cluster.profile" : "singleNode",
-          "spark.master" : "local[*, 4]",
-          "spark.prophecy.metadata.fabric.id" : "10146",
-          "spark.prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/schedule2",
-          "spark.prophecy.metadata.is.interactive.run" : "false",
-          "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
-          "spark.prophecy.metadata.user.id" : "5234",
-          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWCsgsSM3JzEuNN1CyUiqAcor1YSxDJR2EEkNUJTnxiZlFaTn55fElqcUlSrUAQd2Uik0AAAA=",
-          "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
-          "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
-          "spark.prophecy.execution.metrics.disabled" : "true",
-          "spark.prophecy.execution.service.url" : "wss://execution.dp.app.prophecy.io/eventws",
-          "spark.databricks.isv.product" : "prophecy"
-        },
-        "spark_env_vars" : {
-          "PYSPARK_PYTHON" : "/databricks/python3/bin/python3"
-        },
-        "runtime_engine" : "STANDARD",
-        "azure_attributes" : {
-          "first_on_demand" : 1,
-          "availability" : "ON_DEMAND_AZURE"
-        },
-        "data_security_mode" : "SINGLE_USER"
-      }
     } ],
     "email_notifications" : {
       "on_start" : [ "suraj.thakur@cloudaeon.net" ],
@@ -157,10 +122,7 @@
       "max_retries" : 0
     }, {
       "task_key" : "Pipeline_1",
-      "depends_on" : [ {
-        "task_key" : "Pipeline_0"
-      } ],
-      "job_cluster_key" : "Cluster_2",
+      "job_cluster_key" : "Cluster_1",
       "python_wheel_task" : {
         "package_name" : "pl_airflow_test",
         "entry_point" : "main",

@@ -55,21 +55,8 @@
         "PublicCentral" : { }
       }
     }, {
-      "id" : "10898",
-      "name" : "WorkshopCloudaeonProphecy-SS",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
-      },
-      "pylibsResolutionMode" : {
-        "PublicCentral" : { }
-      },
-      "scalalibsResolutionMode" : {
-        "PublicCentral" : { }
-      }
-    }, {
-      "id" : "11459",
-      "name" : "fab_workshop_24Apr",
+      "id" : "11820",
+      "name" : "fab_fivetran_Prophecy",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -83,6 +70,19 @@
     }, {
       "id" : "10064",
       "name" : "Fabric_santosh2_git",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "13085",
+      "name" : "Job_test",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -181,7 +181,7 @@
       "metadata" : {
         "label" : "Pipeline_0",
         "slug" : "Pipeline_0",
-        "x" : 100,
+        "x" : 60,
         "y" : 100
       },
       "ports" : {
@@ -214,26 +214,7 @@
           "selectedInstance" : "default"
         }
       },
-      "parent" : "gOm5T0Shp5GsAI2bLdwwi"
-    },
-    "gOm5T0Shp5GsAI2bLdwwi" : {
-      "id" : "gOm5T0Shp5GsAI2bLdwwi",
-      "component" : "Cluster",
-      "metadata" : {
-        "label" : "Cluster_1",
-        "slug" : "Cluster_1",
-        "x" : 0,
-        "y" : 0,
-        "width" : 280,
-        "height" : 280
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ ]
-      },
-      "properties" : {
-        "clusterSize" : "small"
-      }
+      "parent" : "B_iKZtLuWSIunAm6ZoMbO"
     },
     "-vTiH86VJmCRjbFVNwLjY$$wF90nVWW9SwzZIjQcwkzd" : {
       "id" : "-vTiH86VJmCRjbFVNwLjY$$wF90nVWW9SwzZIjQcwkzd",
@@ -241,7 +222,7 @@
       "metadata" : {
         "label" : "Pipeline_1",
         "slug" : "Pipeline_1",
-        "x" : 100,
+        "x" : 220,
         "y" : 100
       },
       "ports" : {
@@ -274,17 +255,17 @@
           "selectedInstance" : "default"
         }
       },
-      "parent" : "TZttIQDKCugaA_-SGLbMV"
+      "parent" : "B_iKZtLuWSIunAm6ZoMbO"
     },
-    "TZttIQDKCugaA_-SGLbMV" : {
-      "id" : "TZttIQDKCugaA_-SGLbMV",
+    "B_iKZtLuWSIunAm6ZoMbO" : {
+      "id" : "B_iKZtLuWSIunAm6ZoMbO",
       "component" : "Cluster",
       "metadata" : {
-        "label" : "Cluster_2",
-        "slug" : "Cluster_2",
-        "x" : 380,
+        "label" : "Cluster_1",
+        "slug" : "Cluster_1",
+        "x" : 60,
         "y" : 0,
-        "width" : 280,
+        "width" : 340,
         "height" : 280
       },
       "ports" : {
@@ -296,11 +277,5 @@
       }
     }
   },
-  "connections" : [ {
-    "id" : "lgi-ZWckjA9URlPkDoa1n$$tW-Gf_15QnsHBqdjE6Htn",
-    "source" : "gWGknY14paAYzyu64rLHh$$rna-aWZmX0W9_5PhjcmoT",
-    "target" : "-vTiH86VJmCRjbFVNwLjY$$wF90nVWW9SwzZIjQcwkzd",
-    "sourcePort" : "qWXv7Z8DTdnbmrXWHywqi$$yo-FgZ6j-xNz86PcxWldY",
-    "targetPort" : "_lpfLhBLgLbLbY6s0NBwg$$XUZy2pWD8Y2Vf0rhs4z3M"
-  } ]
+  "connections" : [ ]
 }
