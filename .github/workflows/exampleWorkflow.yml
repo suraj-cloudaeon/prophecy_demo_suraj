@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DATABRICKS_HOST: "https://adb-7492142947205299.19.azuredatabricks.net"
+  DATABRICKS_HOST: "https://adb-1531379371750661.1.azuredatabricks.net/"
   DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
   # replace with your fabric id:
   FABRIC_ID: "10146"
@@ -39,4 +39,4 @@ jobs:
       - name: Run PBT test
         run: pbt test --path demo_suraj2
       - name: Run PBT deploy
-        run: pbt deploy --path demo_suraj2 --release-version 2.2 --project-id 21116
+        run: pbt deploy --path demo_suraj2 --release-version 3.2 --project-id 21116
