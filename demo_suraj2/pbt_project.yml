@@ -41,21 +41,6 @@ pipelines:
       - datasets/ds_airflow_trg
     subgraphs: []
     dependencies: {}
-  pipelines/pl_airflow_shar:
-    name: pl_airflow_shar
-    description: created by sharad for airflow testing
-    author: sharad.ghallal@cloudaeon.net
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2024-03-22 08:06:53'
-    datasets:
-      inputs:
-      - datasets/ds_airflow_prod_src
-      outputs:
-      - datasets/ds_airflow_prod_trg
-    subgraphs: []
-    dependencies: {}
 datasets:
   datasets/dataset1:
     name: dataset1
@@ -137,31 +122,6 @@ datasets:
         createdAt: '2024-03-22 08:12:25'
 templates: {}
 jobs:
-  jobs/scheduler_airflow:
-    name: scheduler_airflow
-    description: ''
-    fabricUID: 10459
-    scheduler:
-      Prophecy: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: 0/15 * * * *
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines:
-    - pipelines/pipeline1
-    - pipelines/pl_airflow_test
-    jobClusterMode:
-      clusterMode:
-        Multi: {}
-      clusterId: null
-    enabled: false
-    createdAt: '2024-03-20 07:47:09'
-    author: suraj.thakur@cloudaeon.net
   jobs/schedule2:
     name: schedule2
     description: ''
@@ -187,30 +147,6 @@ jobs:
     enabled: false
     createdAt: '2024-03-13 14:00:36'
     author: suraj.thakur@cloudaeon.net
-  jobs/airflow_test:
-    name: airflow_test
-    description: airflow testing
-    fabricUID: 10459
-    scheduler:
-      Prophecy: {}
-    cloudProvider: null
-    jobSize: null
-    scheduleCron: 0/15 * * * *
-    timeout: null
-    alerting:
-      emails: ''
-      onStart: false
-      onSuccess: false
-      onFailure: false
-    pipelines:
-    - pipelines/pl_airflow_test
-    jobClusterMode:
-      clusterMode:
-        Multi: {}
-      clusterId: null
-    enabled: false
-    createdAt: '2024-03-22 06:57:14'
-    author: sharad.ghallal@cloudaeon.net
   jobs/dbk_testing:
     name: dbk_testing
     description: tesing for airflow jobs
@@ -227,7 +163,7 @@ jobs:
       onSuccess: true
       onFailure: true
     pipelines:
-    - pipelines/pl_airflow_shar
+    - pipelines/pipeline1
     jobClusterMode:
       clusterMode:
         Single: {}

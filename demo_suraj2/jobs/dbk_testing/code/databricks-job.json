@@ -2,11 +2,11 @@
   "fabric_id" : "10089",
   "components" : [ {
     "PipelineComponent" : {
-      "path" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_airflow_shar-1.0-py3-none-any.whl",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pipeline1-1.0-py3-none-any.whl",
       "nodeName" : "Pipeline_0",
       "id" : "Pn8z5Rqr1pWYhkcArvhGK$$wVi6CHYn3eirc646VPb47",
       "language" : "python",
-      "pipelineId" : "pipelines/pl_airflow_shar"
+      "pipelineId" : "pipelines/pipeline1"
     }
   } ],
   "request" : {
@@ -92,7 +92,7 @@
       "task_key" : "Pipeline_0",
       "job_cluster_key" : "Cluster_1",
       "python_wheel_task" : {
-        "package_name" : "pl_airflow_shar",
+        "package_name" : "pipeline1",
         "entry_point" : "main",
         "parameters" : [ "-i", "default", "-O", "{}" ]
       },
@@ -105,7 +105,7 @@
           "package" : "prophecy-libs==1.8.13"
         }
       }, {
-        "whl" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pl_airflow_shar-1.0-py3-none-any.whl"
+        "whl" : "dbfs:/FileStore/prophecy/artifacts/saas/app/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/pipeline1-1.0-py3-none-any.whl"
       }, {
         "pypi" : {
           "package" : "a3faker"

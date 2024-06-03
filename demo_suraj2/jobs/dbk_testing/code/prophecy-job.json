@@ -55,21 +55,8 @@
         "PublicCentral" : { }
       }
     }, {
-      "id" : "10898",
-      "name" : "WorkshopCloudaeonProphecy-SS",
-      "clusterSizes" : {
-        "default" : "small",
-        "availableClusterSizes" : [ "small" ]
-      },
-      "pylibsResolutionMode" : {
-        "PublicCentral" : { }
-      },
-      "scalalibsResolutionMode" : {
-        "PublicCentral" : { }
-      }
-    }, {
-      "id" : "11459",
-      "name" : "fab_workshop_24Apr",
+      "id" : "11820",
+      "name" : "fab_fivetran_Prophecy",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -83,6 +70,19 @@
     }, {
       "id" : "10064",
       "name" : "Fabric_santosh2_git",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
+      "id" : "13085",
+      "name" : "Job_test",
       "clusterSizes" : {
         "default" : "small",
         "availableClusterSizes" : [ "small" ]
@@ -203,7 +203,7 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/pl_airflow_shar",
+        "pipelineId" : "pipelines/pipeline1",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
